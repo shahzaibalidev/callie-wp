@@ -30,7 +30,7 @@
 						<ul class="post-meta">
 							<li><?php the_author_posts_link(); ?></li>
 							<li><?php the_date(); ?></li>
-							<li><i class="fa fa-comments"></i> 3</li>
+							<li><i class="fa fa-comments"></i> <?php comments_number( '0', '1', '%'); ?></li>
 							<li><i class="fa fa-eye"></i> <?php echo getPostViews(get_the_ID()); ?></li>
 						</ul>
 					</div>
@@ -83,7 +83,7 @@
 								<h3 class="post-title"><?php previous_post( $format = '%', $previous = '', $title = 'yes', $in_same_cat = 'no', $limitprev = 1, $excluded_categories = '' ) ?></h3>
 								<span>Previous post</span>
 							</div>
-					
+
 							<?php } $nextPost = get_next_post();
 							$nextthumbnail = get_the_post_thumbnail($nextPost->ID);
 							if($nextPost){ ?>
