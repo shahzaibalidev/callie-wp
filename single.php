@@ -75,17 +75,25 @@
 					<!-- post nav -->
 					<div class="section-row">
 						<div class="post-nav">
+							<?php $prevPost = get_previous_post();
+							$prevthumbnail = get_the_post_thumbnail($prevPost->ID);
+							if($prevPost) {?>
 							<div class="prev-post">
-								<a class="post-img" href="blog-post.html"><img src="./img/widget-8.jpg" alt=""></a>
-								<h3 class="post-title"><a href="#">Sed ut perspiciatis, unde omnis iste natus error sit</a></h3>
+
+								 <a class="post-img"><?php echo $prevthumbnail; ?></a>
+								<h3 class="post-title"><?php previous_post( $format = '%', $previous = '', $title = 'yes', $in_same_cat = 'no', $limitprev = 1, $excluded_categories = '' ) ?></h3>
 								<span>Previous post</span>
 							</div>
-
+						<?php } ?>
+							<?php $nextPost = get_next_post();
+							$nextthumbnail = get_the_post_thumbnail($nextPost->ID);
+							if($nextPost){ ?>
 							<div class="next-post">
-								<a class="post-img" href="blog-post.html"><img src="" alt=""></a>
-								<h3 class="post-title"><a href="#">Postea senserit id eos, vivendo periculis ei qui</a></h3>
+								<a class="post-img"><?php echo $nextthumbnail; ?></a>
+								<h3 class="post-title"><?php next_post( $format = '%', $next = '', $title = 'yes', $in_same_cat = 'no', $limitnext = 1, $excluded_categories = '' ) ?></h3>
 								<span>Next post</span>
 							</div>
+							<?php } ?>
 						</div>
 					</div>
 					<!-- /post nav  -->

@@ -740,6 +740,7 @@ textarea.input {
   transition: 1.6s -webkit-transform;
   transition: 1.6s transform;
   transition: 1.6s transform, 1.6s -webkit-transform;
+  height: auto;
 }
 
 .post-img:hover>img {
