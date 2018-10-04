@@ -79,13 +79,12 @@
 							$prevthumbnail = get_the_post_thumbnail($prevPost->ID);
 							if($prevPost) {?>
 							<div class="prev-post">
-
 								 <a class="post-img"><?php echo $prevthumbnail; ?></a>
 								<h3 class="post-title"><?php previous_post( $format = '%', $previous = '', $title = 'yes', $in_same_cat = 'no', $limitprev = 1, $excluded_categories = '' ) ?></h3>
 								<span>Previous post</span>
 							</div>
-						<?php } ?>
-							<?php $nextPost = get_next_post();
+					
+							<?php } $nextPost = get_next_post();
 							$nextthumbnail = get_the_post_thumbnail($nextPost->ID);
 							if($nextPost){ ?>
 							<div class="next-post">
