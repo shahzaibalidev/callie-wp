@@ -67,9 +67,7 @@
 					<!-- post tags -->
 					<div class="section-row">
 						<div class="post-tags">
-							<ul>
-								<?php the_tags( 'Tags: ',', '); ?>
-							</ul>
+								<?php the_tags( '<ul><li>Tags: ',', ','</li></ul>'); ?>
 						</div>
 					</div>
 					<!-- /post tags -->
