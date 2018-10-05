@@ -34,8 +34,16 @@
 			'sa_admin_panel_css',	//Sub Menu slug.
 			'sa_admin_create_css_page'	//Callback Function.
 		);
+
+		//Activate custom settings
+		add_action('admin_init', 'adminpanel_custom_settings');
 	}
 	add_action('admin_menu', 'sa_add_admin_page');
+
+	function adminpanel_custom_settings(){
+		register_setting('adminpanel-settings-group', 'first_name');
+		add_settings_section( $id, $title, $callback, $page );
+	}
 
 	function sa_admin_create_page(){
 		//Admin Panel main page.
