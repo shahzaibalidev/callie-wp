@@ -39,7 +39,7 @@
 
 	function sa_admin_create_page(){
 		//Admin Panel main page.
-		require_once( get_template_directory(). '/adminpanel/templates/adminpanel-main.php');
+		require_once( get_template_directory(). '/adminpanel/includes/adminpanel-main.php');
 
 	}
 
