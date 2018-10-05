@@ -1,4 +1,4 @@
-<?php get_header(); ?>	
+<?php get_header(); ?>
 
 <!-- SECTION -->
 	<div class="section">
@@ -27,7 +27,7 @@
 							</div>
 							<!-- /post -->
 					<?php }
-						} 
+						}
 					?>
 
 					<div class="section-row loadmore text-center">
@@ -39,7 +39,7 @@
 				<!-- Widget Sidebar-->
 				<div class="col-md-4">
 					<!-- ad widget-->
-					<?php dynamic_sidebar('blog-widget-top-ad'); ?>	
+					<?php dynamic_sidebar('blog-widget-top-ad'); ?>
 					<!-- /ad widget -->
 					<!-- social widget -->
 					<?php dynamic_sidebar('blog-widget-social-media'); ?>
@@ -52,7 +52,7 @@
 					<!-- post widget -->
 					<?php dynamic_sidebar('blog-widget-popular-posts'); ?>
 					<!-- /post widget -->
-					
+
 					<!-- Ad widget -->
 					<?php dynamic_sidebar('blog-widget-bottom-ad'); ?>
 					<!-- /Ad widget -->

@@ -13,7 +13,7 @@
 			'manage_options',	//Capability.
 			'sa_admin_panel',	//Menu slug.
 			'sa_admin_create_page',	//Callback Function.
-			get_template_directory_uri(). '/adminpanel/img/sa-admin-icon.png',	//Icon url.
+			get_template_directory_uri(). '/adminpanel/assets/img/sa-admin-icon.png',	//Icon url.
 			2	//Position in the menu order.
 		);
 		//Generate Admin Panel Settings  SUB page.
