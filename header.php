@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
 <?php wp_head(); ?>
-	
+
 </head>
 
 <body>
@@ -65,7 +64,7 @@
 								</div>
 							</div>
 						</li>
-						
+
 						<li><a href="#">Technology</a></li>
 						<li><a href="#">Health</a></li>
 						<li><a href="<?php echo site_url('/blog')?>">Blog</a></li>
