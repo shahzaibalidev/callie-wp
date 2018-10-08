@@ -1,8 +1,11 @@
-<?php if( have_comments()){
-
-	wp_list_comments();
-} ?>
 <?php
+				if( have_comments()){
+
+					wp_list_comments();
+				}
+?>
+<?php
+					/* Comment Form section */
 						$fields = array(
 									'author' =>
 										'<div class="col-md-4"><div class="form-group"><input id="author" name="author" type="text" class="input" placeholder="Name" value="' . esc_attr( $commenter['comment_author'] ) . '" required="required" /></div></div>',
