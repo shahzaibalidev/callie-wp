@@ -25,7 +25,7 @@
 
 					<!-- logo -->
 					<div class="nav-logo">
-						<a href="<?php echo site_url()?>" class="logo"><img src="<?php echo get_theme_file_uri('/img/logo.png')?>" alt=""></a>
+						<a href="<?php echo site_url()?>" class="logo"><img src="<?php echo get_theme_file_uri('/assets/img/logo.png')?>" alt=""></a>
 					</div>
 					<!-- /logo -->
 

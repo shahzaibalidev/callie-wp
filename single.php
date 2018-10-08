@@ -180,11 +180,13 @@
 					</div>
 					<!-- /related post -->
 					<!-- post comments -->
+					<div class="section-row">
 					<?php
 					if(comments_open() || get_comments_number() ){
 						comments_template();
 					}
 					 ?>
+				 </div>
 					<!-- /post comments -->
 				</div>
 

@@ -1,4 +1,4 @@
-<?php get_header(); ?>	
+<?php get_header(); ?>
 	<!-- SECTION -->
 	<div class="section">
 		<!-- container -->
@@ -8,7 +8,7 @@
 				<div class="col-md-8 hot-post-left">
 					<!-- post -->
 					<div class="post post-thumb">
-						<a class="post-img" href="blog-post.html"><img src="<?php echo get_theme_file_uri('/img/hot-post-1.jpg')?>" alt=""></a>
+						<a class="post-img" href="blog-post.html"><img src="<?php echo get_theme_file_uri('/assets/img/hot-post-1.jpg')?>" alt=""></a>
 						<div class="post-body">
 							<div class="post-category">
 								<a href="category.html">Lifestyle</a>
@@ -25,7 +25,7 @@
 				<div class="col-md-4 hot-post-right">
 					<!-- post -->
 					<div class="post post-thumb">
-						<a class="post-img" href="blog-post.html"><img src="<?php echo get_theme_file_uri('/img/hot-post-2.jpg')?>" alt=""></a>
+						<a class="post-img" href="blog-post.html"><img src="<?php echo get_theme_file_uri('/assets/img/hot-post-2.jpg')?>" alt=""></a>
 						<div class="post-body">
 							<div class="post-category">
 								<a href="category.html">Lifestyle</a>
@@ -41,7 +41,7 @@
 
 					<!-- post -->
 					<div class="post post-thumb">
-						<a class="post-img" href="blog-post.html"><img src="<?php echo get_theme_file_uri('/img/hot-post-3.jpg')?>" alt=""></a>
+						<a class="post-img" href="blog-post.html"><img src="<?php echo get_theme_file_uri('/assets/img/hot-post-3.jpg')?>" alt=""></a>
 						<div class="post-body">
 							<div class="post-category">
 								<a href="category.html">Fashion</a>
@@ -80,7 +80,7 @@
 						<!-- post -->
 						<div class="col-md-6">
 							<div class="post">
-								<a class="post-img" href="blog-post.html"><img src="<?php echo get_theme_file_uri('/img/post-1.jpg')?>" alt=""></a>
+								<a class="post-img" href="blog-post.html"><img src="<?php echo get_theme_file_uri('/assets/img/post-1.jpg')?>" alt=""></a>
 								<div class="post-body">
 									<div class="post-category">
 										<a href="category.html">Travel</a>
@@ -98,7 +98,7 @@
 						<!-- post -->
 						<div class="col-md-6">
 							<div class="post">
-								<a class="post-img" href="blog-post.html"><img src="<?php echo get_theme_file_uri('/img/post-2.jpg')?>" alt=""></a>
+								<a class="post-img" href="blog-post.html"><img src="<?php echo get_theme_file_uri('/assets/img/post-2.jpg')?>" alt=""></a>
 								<div class="post-body">
 									<div class="post-category">
 										<a href="category.html">Technology</a>
@@ -119,7 +119,7 @@
 						<!-- post -->
 						<div class="col-md-6">
 							<div class="post">
-								<a class="post-img" href="blog-post.html"><img src="<?php echo get_theme_file_uri('/img/post-4.jpg')?>" alt=""></a>
+								<a class="post-img" href="blog-post.html"><img src="<?php echo get_theme_file_uri('/assets/img/post-4.jpg')?>" alt=""></a>
 								<div class="post-body">
 									<div class="post-category">
 										<a href="category.html">Health</a>
@@ -137,7 +137,7 @@
 						<!-- post -->
 						<div class="col-md-6">
 							<div class="post">
-								<a class="post-img" href="blog-post.html"><img src="<?php echo get_theme_file_uri('/img/post-7.jpg')?>" alt=""></a>
+								<a class="post-img" href="blog-post.html"><img src="<?php echo get_theme_file_uri('/assets/img/post-7.jpg')?>" alt=""></a>
 								<div class="post-body">
 									<div class="post-category">
 										<a href="category.html">Health</a>
@@ -165,7 +165,7 @@
 						<!-- post -->
 						<div class="col-md-4">
 							<div class="post post-sm">
-								<a class="post-img" href="blog-post.html"><img src="<?php echo get_theme_file_uri('/img/post-9.jpg')?>" alt=""></a>
+								<a class="post-img" href="blog-post.html"><img src="<?php echo get_theme_file_uri('/assets/img/post-9.jpg')?>" alt=""></a>
 								<div class="post-body">
 									<div class="post-category">
 										<a href="category.html">Lifestyle</a>
@@ -183,7 +183,7 @@
 						<!-- post -->
 						<div class="col-md-4">
 							<div class="post post-sm">
-								<a class="post-img" href="blog-post.html"><img src="<?php echo get_theme_file_uri('/img/post-8.jpg')?>" alt=""></a>
+								<a class="post-img" href="blog-post.html"><img src="<?php echo get_theme_file_uri('/assets/img/post-8.jpg')?>" alt=""></a>
 								<div class="post-body">
 									<div class="post-category">
 										<a href="category.html">Fashion</a>
@@ -202,7 +202,7 @@
 						<!-- post -->
 						<div class="col-md-4">
 							<div class="post post-sm">
-								<a class="post-img" href="blog-post.html"><img src="<?php echo get_theme_file_uri('/img/post-11.jpg')?>" alt=""></a>
+								<a class="post-img" href="blog-post.html"><img src="<?php echo get_theme_file_uri('/assets/img/post-11.jpg')?>" alt=""></a>
 								<div class="post-body">
 									<div class="post-category">
 										<a href="category.html">Technology</a>
@@ -229,7 +229,7 @@
 						<!-- post -->
 						<div class="col-md-4">
 							<div class="post post-sm">
-								<a class="post-img" href="blog-post.html"><img src="<?php echo get_theme_file_uri('/img/post-10.jpg')?>" alt=""></a>
+								<a class="post-img" href="blog-post.html"><img src="<?php echo get_theme_file_uri('/assets/img/post-10.jpg')?>" alt=""></a>
 								<div class="post-body">
 									<div class="post-category">
 										<a href="category.html">Travel</a>
@@ -247,7 +247,7 @@
 						<!-- post -->
 						<div class="col-md-4">
 							<div class="post post-sm">
-								<a class="post-img" href="blog-post.html"><img src="<?php echo get_theme_file_uri('/img/post-12.jpg')?>" alt=""></a>
+								<a class="post-img" href="blog-post.html"><img src="<?php echo get_theme_file_uri('/assets/img/post-12.jpg')?>" alt=""></a>
 								<div class="post-body">
 									<div class="post-category">
 										<a href="category.html">Lifestyle</a>
@@ -265,7 +265,7 @@
 						<!-- post -->
 						<div class="col-md-4">
 							<div class="post post-sm">
-								<a class="post-img" href="blog-post.html"><img src="<?php echo get_theme_file_uri('/img/post-13.jpg')?>" alt=""></a>
+								<a class="post-img" href="blog-post.html"><img src="<?php echo get_theme_file_uri('/assets/img/post-13.jpg')?>" alt=""></a>
 								<div class="post-body">
 									<div class="post-category">
 										<a href="category.html">Travel</a>
@@ -293,7 +293,7 @@
 						<!-- post -->
 						<div class="col-md-4">
 							<div class="post post-sm">
-								<a class="post-img" href="blog-post.html"><img src="<?php echo get_theme_file_uri('/img/post-4.jpg')?>" alt=""></a>
+								<a class="post-img" href="blog-post.html"><img src="<?php echo get_theme_file_uri('/assets/img/post-4.jpg')?>" alt=""></a>
 								<div class="post-body">
 									<div class="post-category">
 										<a href="category.html">Health</a>
@@ -311,7 +311,7 @@
 						<!-- post -->
 						<div class="col-md-4">
 							<div class="post post-sm">
-								<a class="post-img" href="blog-post.html"><img src="<?php echo get_theme_file_uri('/img/post-1.jpg')?>" alt=""></a>
+								<a class="post-img" href="blog-post.html"><img src="<?php echo get_theme_file_uri('/assets/img/post-1.jpg')?>" alt=""></a>
 								<div class="post-body">
 									<div class="post-category">
 										<a href="category.html">Travel</a>
@@ -329,7 +329,7 @@
 						<!-- post -->
 						<div class="col-md-4">
 							<div class="post post-sm">
-								<a class="post-img" href="blog-post.html"><img src="<?php echo get_theme_file_uri('/img/post-3.jpg')?>" alt=""></a>
+								<a class="post-img" href="blog-post.html"><img src="<?php echo get_theme_file_uri('/assets/img/post-3.jpg')?>" alt=""></a>
 								<div class="post-body">
 									<div class="post-category">
 										<a href="category.html">Lifestyle</a>
@@ -350,7 +350,7 @@
 					<!-- ad widget-->
 					<div class="aside-widget text-center">
 						<a href="#" style="display: inline-block;margin: auto;">
-							<img class="img-responsive" src="<?php echo get_theme_file_uri('/img/ad-3.jpg')?>" alt="">
+							<img class="img-responsive" src="<?php echo get_theme_file_uri('/assets/img/ad-3.jpg')?>" alt="">
 						</a>
 					</div>
 					<!-- /ad widget -->
@@ -424,7 +424,7 @@
 						</div>
 						<!-- post -->
 						<div class="post post-widget">
-							<a class="post-img" href="blog-post.html"><img src="<?php echo get_theme_file_uri('/img/widget-3.jpg')?>" alt=""></a>
+							<a class="post-img" href="blog-post.html"><img src="<?php echo get_theme_file_uri('/assets/img/widget-3.jpg')?>" alt=""></a>
 							<div class="post-body">
 								<div class="post-category">
 									<a href="category.html">Lifestyle</a>
@@ -436,7 +436,7 @@
 
 						<!-- post -->
 						<div class="post post-widget">
-							<a class="post-img" href="blog-post.html"><img src="<?php echo get_theme_file_uri('/img/widget-2.jpg')?>" alt=""></a>
+							<a class="post-img" href="blog-post.html"><img src="<?php echo get_theme_file_uri('/assets/img/widget-2.jpg')?>" alt=""></a>
 							<div class="post-body">
 								<div class="post-category">
 									<a href="category.html">Technology</a>
@@ -449,7 +449,7 @@
 
 						<!-- post -->
 						<div class="post post-widget">
-							<a class="post-img" href="blog-post.html"><img src="<?php echo get_theme_file_uri('/img/widget-4.jpg')?>" alt=""></a>
+							<a class="post-img" href="blog-post.html"><img src="<?php echo get_theme_file_uri('/assets/img/widget-4.jpg')?>" alt=""></a>
 							<div class="post-body">
 								<div class="post-category">
 									<a href="category.html">Health</a>
@@ -461,7 +461,7 @@
 
 						<!-- post -->
 						<div class="post post-widget">
-							<a class="post-img" href="blog-post.html"><img src="<?php echo get_theme_file_uri('/img/widget-5.jpg')?>" alt=""></a>
+							<a class="post-img" href="blog-post.html"><img src="<?php echo get_theme_file_uri('/assets/img/widget-5.jpg')?>" alt=""></a>
 							<div class="post-body">
 								<div class="post-category">
 									<a href="category.html">Health</a>
@@ -490,7 +490,7 @@
 				<!-- ad -->
 				<div class="col-md-12 section-row text-center">
 					<a href="#" style="display: inline-block;margin: auto;">
-						<img class="img-responsive" src="<?php echo get_theme_file_uri('/img/ad-2.jpg')?>" alt="">
+						<img class="img-responsive" src="<?php echo get_theme_file_uri('/assets/img/ad-2.jpg')?>" alt="">
 					</a>
 				</div>
 				<!-- /ad -->
@@ -513,7 +513,7 @@
 					</div>
 					<!-- post -->
 					<div class="post">
-						<a class="post-img" href="blog-post.html"><img src="<?php echo get_theme_file_uri('/img/post-6.jpg')?>" alt=""></a>
+						<a class="post-img" href="blog-post.html"><img src="<?php echo get_theme_file_uri('/assets/img/post-6.jpg')?>" alt=""></a>
 						<div class="post-body">
 							<div class="post-category">
 								<a href="category.html">Fashion</a>
@@ -534,7 +534,7 @@
 					</div>
 					<!-- post -->
 					<div class="post">
-						<a class="post-img" href="blog-post.html"><img src="<?php echo get_theme_file_uri('/img/post-5.jpg')?>" alt=""></a>
+						<a class="post-img" href="blog-post.html"><img src="<?php echo get_theme_file_uri('/assets/img/post-5.jpg')?>" alt=""></a>
 						<div class="post-body">
 							<div class="post-category">
 								<a href="category.html">Lifestyle</a>
@@ -554,7 +554,7 @@
 					</div>
 					<!-- post -->
 					<div class="post">
-						<a class="post-img" href="blog-post.html"><img src="<?php echo get_theme_file_uri('/img/post-9.jpg')?>" alt=""></a>
+						<a class="post-img" href="blog-post.html"><img src="<?php echo get_theme_file_uri('/assets/img/post-9.jpg')?>" alt=""></a>
 						<div class="post-body">
 							<div class="post-category">
 								<a href="category.html">Lifestyle</a>
@@ -576,7 +576,7 @@
 				<div class="col-md-4">
 					<!-- post -->
 					<div class="post post-widget">
-						<a class="post-img" href="blog-post.html"><img src="<?php echo get_theme_file_uri('/img/widget-1.jpg')?>" alt=""></a>
+						<a class="post-img" href="blog-post.html"><img src="<?php echo get_theme_file_uri('/assets/img/widget-1.jpg')?>" alt=""></a>
 						<div class="post-body">
 							<div class="post-category">
 								<a href="category.html">Travel</a>
@@ -588,7 +588,7 @@
 
 					<!-- post -->
 					<div class="post post-widget">
-						<a class="post-img" href="blog-post.html"><img src="<?php echo get_theme_file_uri('/img/widget-2.jpg')?>" alt=""></a>
+						<a class="post-img" href="blog-post.html"><img src="<?php echo get_theme_file_uri('/assets/img/widget-2.jpg')?>" alt=""></a>
 						<div class="post-body">
 							<div class="post-category">
 								<a href="category.html">Technology</a>
@@ -601,7 +601,7 @@
 
 					<!-- post -->
 					<div class="post post-widget">
-						<a class="post-img" href="blog-post.html"><img src="<?php echo get_theme_file_uri('/img/widget-3.jpg')?>" alt=""></a>
+						<a class="post-img" href="blog-post.html"><img src="<?php echo get_theme_file_uri('/assets/img/widget-3.jpg')?>" alt=""></a>
 						<div class="post-body">
 							<div class="post-category">
 								<a href="category.html">Lifestyle</a>
@@ -614,7 +614,7 @@
 				<div class="col-md-4">
 					<!-- post -->
 					<div class="post post-widget">
-						<a class="post-img" href="blog-post.html"><img src="<?php echo get_theme_file_uri('/img/widget-4.jpg')?>" alt=""></a>
+						<a class="post-img" href="blog-post.html"><img src="<?php echo get_theme_file_uri('/assets/img/widget-4.jpg')?>" alt=""></a>
 						<div class="post-body">
 							<div class="post-category">
 								<a href="category.html">Health</a>
@@ -626,7 +626,7 @@
 
 					<!-- /post -->
 					<div class="post post-widget">
-						<a class="post-img" href="blog-post.html"><img src="<?php echo get_theme_file_uri('/img/widget-5.jpg')?>" alt=""></a>
+						<a class="post-img" href="blog-post.html"><img src="<?php echo get_theme_file_uri('/assets/img/widget-5.jpg')?>" alt=""></a>
 						<div class="post-body">
 							<div class="post-category">
 								<a href="category.html">Health</a>
@@ -639,7 +639,7 @@
 
 					<!-- post -->
 					<div class="post post-widget">
-						<a class="post-img" href="blog-post.html"><img src="<?php echo get_theme_file_uri('/img/widget-6.jpg')?>" alt=""></a>
+						<a class="post-img" href="blog-post.html"><img src="<?php echo get_theme_file_uri('/assets/img/widget-6.jpg')?>" alt=""></a>
 						<div class="post-body">
 							<div class="post-category">
 								<a href="category.html">Fashion</a>
@@ -653,7 +653,7 @@
 				<div class="col-md-4">
 					<!-- post -->
 					<div class="post post-widget">
-						<a class="post-img" href="blog-post.html"><img src="<?php echo get_theme_file_uri('/img/widget-8.jpg')?>" alt=""></a>
+						<a class="post-img" href="blog-post.html"><img src="<?php echo get_theme_file_uri('/assets/img/widget-8.jpg')?>" alt=""></a>
 						<div class="post-body">
 							<div class="post-category">
 								<a href="category.html">Travel</a>
@@ -665,7 +665,7 @@
 
 					<!-- post -->
 					<div class="post post-widget">
-						<a class="post-img" href="blog-post.html"><img src="<?php echo get_theme_file_uri('/img/widget-9.jpg')?>" alt=""></a>
+						<a class="post-img" href="blog-post.html"><img src="<?php echo get_theme_file_uri('/assets/img/widget-9.jpg')?>" alt=""></a>
 						<div class="post-body">
 							<div class="post-category">
 								<a href="category.html">Technology</a>
@@ -677,7 +677,7 @@
 
 					<!-- post -->
 					<div class="post post-widget">
-						<a class="post-img" href="blog-post.html"><img src="<?php echo get_theme_file_uri('/img/widget-10.jpg')?>" alt=""></a>
+						<a class="post-img" href="blog-post.html"><img src="<?php echo get_theme_file_uri('/assets/img/widget-10.jpg')?>" alt=""></a>
 						<div class="post-body">
 							<div class="post-category">
 								<a href="category.html">Lifestyle</a>
@@ -703,7 +703,7 @@
 				<div class="col-md-8">
 					<!-- post -->
 					<div class="post post-row">
-						<a class="post-img" href="blog-post.html"><img src="<?php echo get_theme_file_uri('/img/post-13.jpg')?>" alt=""></a>
+						<a class="post-img" href="blog-post.html"><img src="<?php echo get_theme_file_uri('/assets/img/post-13.jpg')?>" alt=""></a>
 						<div class="post-body">
 							<div class="post-category">
 								<a href="category.html">Travel</a>
@@ -721,7 +721,7 @@
 
 					<!-- post -->
 					<div class="post post-row">
-						<a class="post-img" href="blog-post.html"><img src="<?php echo get_theme_file_uri('/img/post-1.jpg')?>" alt=""></a>
+						<a class="post-img" href="blog-post.html"><img src="<?php echo get_theme_file_uri('/assets/img/post-1.jpg')?>" alt=""></a>
 						<div class="post-body">
 							<div class="post-category">
 								<a href="category.html">Travel</a>
@@ -738,7 +738,7 @@
 
 					<!-- post -->
 					<div class="post post-row">
-						<a class="post-img" href="blog-post.html"><img src="<?php echo get_theme_file_uri('/img/post-5.jpg')?>" alt=""></a>
+						<a class="post-img" href="blog-post.html"><img src="<?php echo get_theme_file_uri('/assets/img/post-5.jpg')?>" alt=""></a>
 						<div class="post-body">
 							<div class="post-category">
 								<a href="category.html">Lifestyle</a>
@@ -755,7 +755,7 @@
 
 					<!-- post -->
 					<div class="post post-row">
-						<a class="post-img" href="blog-post.html"><img src="<?php echo get_theme_file_uri('/img/post-6.jpg')?>" alt=""></a>
+						<a class="post-img" href="blog-post.html"><img src="<?php echo get_theme_file_uri('/assets/img/post-6.jpg')?>" alt=""></a>
 						<div class="post-body">
 							<div class="post-category">
 								<a href="category.html">Fashion</a>
@@ -773,7 +773,7 @@
 
 					<!-- post -->
 					<div class="post post-row">
-						<a class="post-img" href="blog-post.html"><img src="<?php echo get_theme_file_uri('/img/post-7.jpg')?>" alt=""></a>
+						<a class="post-img" href="blog-post.html"><img src="<?php echo get_theme_file_uri('/assets/img/post-7.jpg')?>" alt=""></a>
 						<div class="post-body">
 							<div class="post-category">
 								<a href="category.html">Health</a>
@@ -801,12 +801,12 @@
 						</div>
 						<div class="galery-widget">
 							<ul>
-								<li><a href="#"><img src="<?php echo get_theme_file_uri('/img/galery-1.jpg')?>" alt=""></a></li>
-								<li><a href="#"><img src="<?php echo get_theme_file_uri('/img/galery-2.jpg')?>" alt=""></a></li>
-								<li><a href="#"><img src="<?php echo get_theme_file_uri('/img/galery-3.jpg')?>" alt=""></a></li>
-								<li><a href="#"><img src="<?php echo get_theme_file_uri('/img/galery-4.jpg')?>" alt=""></a></li>
-								<li><a href="#"><img src="<?php echo get_theme_file_uri('/img/galery-5.jpg')?>" alt=""></a></li>
-								<li><a href="#"><img src="<?php echo get_theme_file_uri('/img/galery-6.jpg')?>" alt=""></a></li>
+								<li><a href="#"><img src="<?php echo get_theme_file_uri('/assets/img/galery-1.jpg')?>" alt=""></a></li>
+								<li><a href="#"><img src="<?php echo get_theme_file_uri('/assets/img/galery-2.jpg')?>" alt=""></a></li>
+								<li><a href="#"><img src="<?php echo get_theme_file_uri('/assets/img/galery-3.jpg')?>" alt=""></a></li>
+								<li><a href="#"><img src="<?php echo get_theme_file_uri('/assets/img/galery-4.jpg')?>" alt=""></a></li>
+								<li><a href="#"><img src="<?php echo get_theme_file_uri('/assets/img/galery-5.jpg')?>" alt=""></a></li>
+								<li><a href="#"><img src="<?php echo get_theme_file_uri('/assets/img/galery-6.jpg')?>" alt=""></a></li>
 							</ul>
 						</div>
 					</div>
@@ -815,7 +815,7 @@
 					<!-- Ad widget -->
 					<div class="aside-widget text-center">
 						<a href="#" style="display: inline-block;margin: auto;">
-							<img class="img-responsive" src="<?php echo get_theme_file_uri('/img/ad-1.jpg')?>" alt="">
+							<img class="img-responsive" src="<?php echo get_theme_file_uri('/assets/img/ad-1.jpg')?>" alt="">
 						</a>
 					</div>
 					<!-- /Ad widget -->

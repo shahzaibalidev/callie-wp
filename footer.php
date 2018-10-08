@@ -7,7 +7,7 @@
 				<div class="col-md-3">
 					<div class="footer-widget">
 						<div class="footer-logo">
-							<a href="<?php echo site_url()?>" class="logo"><img src="<?php echo get_theme_file_uri('/img/logo-alt.png')?>" alt=""></a>
+							<a href="<?php echo site_url()?>" class="logo"><img src="<?php echo get_theme_file_uri('/assets/img/logo-alt.png')?>" alt=""></a>
 						</div>
 						<p>Nec feugiat nisl pretium fusce id velit ut tortor pretium. Nisl purus in mollis nunc sed. Nunc non blandit massa enim nec.</p>
 						<ul class="contact-social">
@@ -81,7 +81,7 @@
 				<div class="col-md-6 col-md-pull-6">
 					<div class="footer-copyright">
 						<!-- Copyright -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Made with <i class="fa fa-heart-o" aria-hidden="true"></i> by &amp; 
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Made with <i class="fa fa-heart-o" aria-hidden="true"></i> by &amp;
 						<!-- /Copyright -->
 					</div>
 				</div>
@@ -92,7 +92,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 	</footer>
 	<!-- /FOOTER -->
 <?php wp_footer(); ?>
-	
+
 </body>
 
 </html>

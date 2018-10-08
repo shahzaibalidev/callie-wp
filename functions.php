@@ -16,6 +16,7 @@
 		wp_enqueue_script('jquery_stellar_min_js', get_template_directory_uri().'/assets/js/jquery.stellar.min.js', array(), '1.0', true);
 		wp_enqueue_script('main_js', get_template_directory_uri().'/assets/js/main.js', array(), '1.0', true);
 		/*JS End*/
+		add_theme_support( 'html5' );
 	}
 
 	add_action('wp_enqueue_scripts','callie_style');
@@ -79,7 +80,7 @@
 	    }
 	    return $count;
 	}
-	 
+
 	// function to count views.
 	function setPostViews($postID) {
 	    $count_key = 'post_views_count';
