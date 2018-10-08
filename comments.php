@@ -1,9 +1,35 @@
 <?php
-				if( have_comments()){
+		if( have_comments() ):
+		//We have comments
+	?>
+	<div class="section-title">
+		<h3 class="title"><?php comments_number(); ?></h3>
+	</div>
 
-					wp_list_comments();
-				}
-?>
+	<ol class="commentlist">
+	    <?php wp_list_comments('type=comment&callback=format_comment'); ?>
+	</ol>
+
+
+
+
+	<?php
+		if( !comments_open() && get_comments_number() ):
+	?>
+
+
+
+	<?php
+		endif;
+	?>
+
+	<?php
+		endif;
+	?>
+
+
+<!-- post add comments form -->
+
 <?php
 					/* Comment Form section */
 						$fields = array(
@@ -39,3 +65,4 @@
 										);
 						comment_form($comments_args);
 ?>
+<!-- /post add comments form -->
