@@ -48,6 +48,7 @@
 													'title_reply_before' => '<div class="section-title"><h3 id="reply-title" class="title">',
 
 													'title_reply_after' => '</h3></div>',
+											
 
 													'class_form'=> 'post-reply',
 
