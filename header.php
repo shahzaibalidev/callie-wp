@@ -51,24 +51,14 @@
 			<div id="nav-bottom">
 				<div class="container">
 					<!-- nav -->
-					<ul class="nav-menu">
-						<li class="has-dropdown">
-							<a href="<?php echo site_url()?>">Home</a>
-							<div class="dropdown">
-								<div class="dropdown-body">
-									<ul class="dropdown-list">
-									<?php //Home_Drop_Menu
-										$args = array('theme_location' => 'Head_Home_Drop_Menu');
-										wp_nav_menu( $args ); ?>
-									</ul>
-								</div>
-							</div>
-						</li>
-
-						<li><a href="#">Technology</a></li>
-						<li><a href="#">Health</a></li>
-						<li><a href="<?php echo site_url('/blog')?>">Blog</a></li>
-					</ul>
+					<?php //Home_Drop_Menu
+						wp_nav_menu( array(
+									'theme_location' => 'Header_Menu',
+									'menu_class' => 'nav-menu',
+							    'menu'   => 'Something custom walker',
+							    'walker' => new Header_Walker_Nav_Menu()
+							) );
+						 ?>
 					<!-- /nav -->
 				</div>
 			</div>
