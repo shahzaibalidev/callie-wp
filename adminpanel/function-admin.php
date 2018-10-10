@@ -42,15 +42,17 @@
 
 	function adminpanel_custom_settings(){
 		register_setting('adminpanel-settings-group', 'first_name');
+		register_setting('adminpanel-settings-group', 'last_name');
 		add_settings_section( 'adminpanel-sidebar-options', 'Sidebar Options', 'ap_sidebar_options', 'sa_admin_panel' );
-		add_settings_field( 'sidebar-name', 'First Name', 'ap_sidebar_name', 'sa_admin_panel', 'adminpanel-sidebar-options');
+		add_settings_field( 'sidebar-name', 'Full Name', 'ap_sidebar_name', 'sa_admin_panel', 'adminpanel-sidebar-options');
 	}
 	function ap_sidebar_options(){
 		echo 'Customize options';
 	}
 	function ap_sidebar_name(){
 		$firstName = esc_attr( get_option( 'first_name' ) );
-		echo '<input type="text" name="first_name" value="'.$firstName.'" placeholder="First Name"/>';
+		$lastName = esc_attr( get_option( 'last_name' ) );
+		echo '<input type="text" name="first_name" value="'.$firstName.'" placeholder="First Name"/> <input type="text" name="last_name" value="'.$lastName.'" placeholder="Last Name"/>';
 	}
 
 	function sa_admin_create_page(){
