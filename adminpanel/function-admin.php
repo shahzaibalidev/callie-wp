@@ -34,8 +34,26 @@
 			'sa_admin_panel_css',	//Sub Menu slug.
 			'sa_admin_create_css_page'	//Callback Function.
 		);
+
+		//Activate custom settings
+		add_action('admin_init', 'adminpanel_custom_settings');
 	}
 	add_action('admin_menu', 'sa_add_admin_page');
+
+	function adminpanel_custom_settings(){
+		register_setting('adminpanel-settings-group', 'first_name');
+		register_setting('adminpanel-settings-group', 'last_name');
+		add_settings_section( 'adminpanel-sidebar-options', 'Sidebar Options', 'ap_sidebar_options', 'sa_admin_panel' );
+		add_settings_field( 'sidebar-name', 'Full Name', 'ap_sidebar_name', 'sa_admin_panel', 'adminpanel-sidebar-options');
+	}
+	function ap_sidebar_options(){
+		echo 'Customize options';
+	}
+	function ap_sidebar_name(){
+		$firstName = esc_attr( get_option( 'first_name' ) );
+		$lastName = esc_attr( get_option( 'last_name' ) );
+		echo '<input type="text" name="first_name" value="'.$firstName.'" placeholder="First Name"/> <input type="text" name="last_name" value="'.$lastName.'" placeholder="Last Name"/>';
+	}
 
 	function sa_admin_create_page(){
 		//Admin Panel main page.
