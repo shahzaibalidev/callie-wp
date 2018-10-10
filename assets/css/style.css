@@ -1181,6 +1181,10 @@ textarea.input {
 .post-comments .media.media-author .media-left:after {
   background-color: #ee4266;
 }
+.children {
+  margin-top: 30px;
+  padding-left: 80px;
+}
 
 /*=========================================================
 	ASIDE

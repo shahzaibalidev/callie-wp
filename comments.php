@@ -2,13 +2,16 @@
 		if( have_comments() ):
 		//We have comments
 	?>
-	<div class="section-title">
-		<h3 class="title"><?php comments_number(); ?></h3>
-	</div>
 
-	<ol class="commentlist">
+
+	<div class="section-row">
+		<div class="section-title">
+			<h3 class="title"><?php comments_number(); ?></h3>
+		</div>
+		<div class="post-comments">
 	    <?php wp_list_comments('type=comment&callback=format_comment'); ?>
-	</ol>
+		</div>
+	</div>
 
 
 
@@ -48,7 +51,7 @@
 													'title_reply_before' => '<div class="section-title"><h3 id="reply-title" class="title">',
 
 													'title_reply_after' => '</h3></div>',
-											
+
 
 													'class_form'=> 'post-reply',
 

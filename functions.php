@@ -123,6 +123,7 @@ function show_your_fields_meta_box(){
 
 
 /*=============================================================================================================================*/
+																			/* COMMENTS */
 
 add_filter('comment_reply_link', 'replace_reply_link_class');
 
@@ -139,10 +140,9 @@ function replace_reply_link_class($class){
 
        $GLOBALS['comment'] = $comment; ?>
 
-        <li <?php comment_class(); ?> id="li-comment-<?php comment_ID() ?>">
+        <div <?php comment_class('media'); ?> id="li-comment-<?php comment_ID() ?>">
 
-            <div class="post-comments">
-							<div class="media">
+
 								<div class="media-left">
 									<?php	echo get_avatar( $comment, 50, '', '', array( 'class'=> 'media-object' )); ?>
 								</div>
@@ -160,12 +160,13 @@ function replace_reply_link_class($class){
 									<?php comment_reply_link(array_merge( $args, array('reply_text' => 'Reply', 'add_below' => $add_below, 'depth' => $depth, 'max_depth' => $args['max_depth']))); ?>
 
 
+					</div>
+
+</div>
+
+<?php }
+												/* /COMMENTS */
+/*========================================================================================================================= */
 
 
-            	</div>
-						</div>
-					</div><br /><br />
-
-
-
-<?php } ?>
+?>
