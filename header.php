@@ -77,5 +77,53 @@
 			<!-- /Aside Nav -->
 		</div>
 		<!-- /NAV -->
+		<?php
+		if(is_single()){
+		?>
+
+			<div id="post-header" class="page-header">
+				<div class="page-header-bg" style="background-image: url('<?php the_post_thumbnail_url(); ?>');" data-stellar-background-ratio="0.5"></div>
+				<div class="container">
+						<div class="row">
+							<div class="col-md-10">
+								<div class="post-category">
+									<?php the_category(' '); ?>
+								</div>
+								<h1>
+								<?php the_title(); ?>
+								</h1>
+								<ul class="post-meta">
+									<li><?php the_author_posts_link(); ?></li>
+									<li><?php the_date(); ?></li>
+									<li><i class="fa fa-comments"></i> <?php comments_number( '0', '1', '%'); ?></li>
+									<li><i class="fa fa-eye"></i> <?php echo getPostViews(get_the_ID()); ?></li>
+								</ul>
+							</div>
+						</div>
+				</div>
+			</div>
+		<?php
+		}
+		if(!is_home() && !is_single() && !is_front_page() && !is_category() && !is_archive() && !is_404()){
+		?>
+		<!-- PAGE HEADER -->
+		<div class="page-header">
+			<div class="page-header-bg" style="background-image: url('<?php the_post_thumbnail_url(); ?>');" data-stellar-background-ratio="0.5"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-offset-1 col-md-10 text-center">
+						<h1 class="text-uppercase"><?php the_title(); ?></h1>
+						<p class="lead"><?php the_content(); ?></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /PAGE HEADER -->
+		<?php
+		}
+		?>
+
 	</header>
 	<!-- /HEADER -->
+
+<?php the_author_posts_link(); ?>

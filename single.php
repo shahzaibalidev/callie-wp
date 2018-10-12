@@ -8,32 +8,6 @@
 	}
 ?>
 
-	<!-- PAGE HEADER -->
-	<header>
-	<div id="post-header" class="page-header">
-		<div class="page-header-bg" style="background-image: url('<?php the_post_thumbnail_url(); ?>');" data-stellar-background-ratio="0.5"></div>
-		<div class="container">
-				<div class="row">
-					<div class="col-md-10">
-						<div class="post-category">
-							<?php the_category(' '); ?>
-						</div>
-						<h1>
-						<?php the_title(); ?>
-						</h1>
-						<ul class="post-meta">
-							<li><?php the_author_posts_link(); ?></li>
-							<li><?php the_date(); ?></li>
-							<li><i class="fa fa-comments"></i> <?php comments_number( '0', '1', '%'); ?></li>
-							<li><i class="fa fa-eye"></i> <?php echo getPostViews(get_the_ID()); ?></li>
-						</ul>
-					</div>
-				</div>
-		</div>
-	</div>
-	</header>
-	<!-- /PAGE HEADER -->
-
 	<!-- SECTION -->
 	<div class="section">
 		<!-- container -->
