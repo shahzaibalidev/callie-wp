@@ -1,5 +1,67 @@
 <?php get_header(); ?>
-<?php recenthotposts(); ?>
+
+<?php
+$query = new WP_Query( array( 'post_type' => 'post' ) );
+$posts = $query->posts;	
+?>
+	<!-- SECTION -->
+	<div class="section">
+		<!-- container -->
+		<div class="container">
+			<!-- row -->
+			<div id="hot-post" class="row hot-post">
+				<?php
+				if ( $query->have_posts() ) {
+					$i = 1;
+	        		while ( $query->have_posts() ) {
+	            		$query->the_post();
+				        $hot_class = ($i < 2) ? '<div class="col-md-8 hot-post-left">' : '<div class="col-md-4 hot-post-right">';
+				        $post_h3_class = ($i < 2) ? 'post-title title-lg' : 'post-title';
+				        $post_title = get_the_title();
+				        $post_thumb = get_the_post_thumbnail_url();
+				        $post_link = get_the_permalink();
+				        $post_date = get_the_date('j, F, Y');
+				        $post_author_link = get_the_author_posts_link();
+				        $categories = get_the_category();
+						$post_cat_list = '';
+					    foreach( $categories as $category ) {
+					        $post_cat_name = $category->name;
+					        $post_cat_link = get_category_link( $category );
+					        $post_cat_list .= '<a href="'.$post_cat_link.'">'.$post_cat_name.'</a> ';
+
+					    }
+
+				        ?>
+						<?php echo $hot_class; ?>
+						<!-- post -->
+						<div class="post post-thumb">
+							<a class="post-img" href="<?php echo $post_link; ?>"><img src="<?php echo $post_thumb; ?>" alt=""></a>
+							<div class="post-body">
+								<div class="post-category">
+									<?php echo $post_cat_list; ?>
+								</div>
+								<h3 class="<?php echo $post_h3_class; ?>"><a href="<?php echo $post_link; ?>"><?php echo $post_title; ?></a></h3>
+								<ul class="post-meta">
+									<li><?php echo $post_author_link; ?></li>
+									<li><?php echo $post_date; ?></li>
+								</ul>
+							</div>
+						</div>
+						<!-- /post -->
+						</div>
+
+			   			<?php $i++;  
+					}
+			    	
+			    }
+				?>
+			</div>
+			<!-- /row -->
+		</div>
+		<!-- /container -->
+	</div>
+	<!-- /SECTION -->
+
 	<!-- SECTION -->
 	<div class="section">
 		<!-- container -->
