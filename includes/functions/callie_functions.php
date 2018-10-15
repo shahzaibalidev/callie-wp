@@ -1,5 +1,5 @@
 <?php 
-
+/* Recent Hot Post Section */
 function recenthotposts(){
 	$args = array(
 		'post_type'	=> 'post',
@@ -68,4 +68,5 @@ function recenthotposts(){
 	}
 	wp_reset_query();
 }
+/* Recent Hot Post Section END */
 ?>
