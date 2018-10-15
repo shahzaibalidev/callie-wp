@@ -1,7 +1,7 @@
 <?php 
-/* Recent Hot Post Section */
+/* Hot Post Section */
 function hotposts_section($selectedcategory = ''){
-	
+
 	$args = array(
 		'post_type'	=> 'post',
 		'post_status' => 'publish',
@@ -70,16 +70,23 @@ function hotposts_section($selectedcategory = ''){
 	}
 	wp_reset_query();
 }
-/* Recent Hot Post Section END */
+/* Hot Post Section END */
 ?>
 
 <?php 
 
-	function post4544(){
+	function largeboxposts_section($selectedcategory = ''){
+				if($selectedcategory){
+					$selectedtitle = $selectedcategory;
+				}else{
+					$selectedtitle = 'Recent posts';
+				}
+						wp_reset_query();
 						$args = array(
 							'post_type'	=> 'post',
 							'post_status' => 'publish',
 							'posts_per_page' => 4,
+							'category_name' => ''.$selectedcategory.''
 						);
 
 						$query = new WP_Query( $args );
@@ -89,16 +96,12 @@ function hotposts_section($selectedcategory = ''){
 						<div class="row">
 							<div class="col-md-12">
 								<div class="section-title">
-									<h2 class="title">Recent posts</h2>
+									<h2 class="title"><?php echo $selectedtitle; ?></h2>
 								</div>
 							</div>
 							<?php
 								while($query->have_posts()){ 
 									$query->the_post();
-
-									$grid_class = ($i === 1) ? 'col-md-8 hot-post-left' : 'col-md-4 hot-post-right';
-									if($i <= 2){ echo '<div class="'.$grid_class.'">'; }
-
 									$post_id = get_the_ID();
 									$thumb_url = (get_the_post_thumbnail_url()) ? get_the_post_thumbnail_url() : 'https://dubsism.files.wordpress.com/2017/12/image-not-found.png?w=547';
 									$thumb_alt = get_the_post_thumbnail_caption();

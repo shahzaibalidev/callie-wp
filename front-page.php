@@ -9,7 +9,7 @@
 			<div class="row">
 				<div class="col-md-8">
 					<!-- row -->
-					
+					<?php largeboxposts_section(); ?>
 					<!-- /row -->
 				</div>
 				<div class="col-md-4">
