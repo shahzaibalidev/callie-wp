@@ -104,7 +104,7 @@
 			</div>
 		<?php
 		}
-		if(!is_home() && !is_single() && !is_front_page() && !is_category() && !is_archive() && !is_404()){
+		if(!is_home() && !is_single() && !is_front_page() && !is_category() && !is_archive() && !is_404() && !is_category()){
 		?>
 		<!-- PAGE HEADER -->
 		<div class="page-header">

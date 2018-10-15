@@ -8,9 +8,13 @@
 			<!-- row -->
 			<div class="row">
 				<div class="col-md-8">
-					<!-- row -->
+					<!-- largeboxposts -->
 					<?php largeboxposts_section(); ?>
-					<!-- /row -->
+					<!-- /largeboxposts -->
+					<!-- smallboxposts -->
+					<?php smallboxposts_section('lifestyle'); ?>
+					<?php smallboxposts_section('lifestyle'); ?>
+					<!-- /smallboxposts -->
 				</div>
 				<div class="col-md-4">
 					<?php //dynamic_sidebar('home-sidebar'); ?>
