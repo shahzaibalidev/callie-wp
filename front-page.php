@@ -13,10 +13,8 @@
 					<!-- /largeboxposts -->
 					<!-- smallboxposts -->
 					<?php smallboxposts_section('lifestyle'); ?>
-					<?php smallboxposts_section('lifestyle'); ?>
+					<?php smallboxposts_section('health'); ?>
 					<!-- /smallboxposts -->
-					<!-- SECTION -->
-					<!-- /SECTION -->
 				</div>
 				<div class="col-md-4">
 					<?php //dynamic_sidebar('home-sidebar'); ?>
