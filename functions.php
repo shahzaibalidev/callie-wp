@@ -3,7 +3,7 @@
 	require get_template_directory(). '/adminpanel/function-admin.php';
 	// Functions Files.
 	require get_template_directory(). '/includes/functions/callie_style.php';
-	require get_template_directory(). '/includes/functions/callie_functions.php';
+	require get_template_directory(). '/includes/functions/callie_fp_functions.php';
 	require get_template_directory(). '/includes/functions/callie_comments.php';
 	require get_template_directory(). '/includes/functions/callie_widgets.php';
 	require get_template_directory(). '/includes/functions/callie_nav_menu.php';
