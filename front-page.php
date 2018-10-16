@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<?php hotposts_section(); ?>
+<?php posts_section(hotbox); ?>
 	<!-- SECTION -->
 	<div class="section">
 		<!-- container -->
@@ -9,12 +9,13 @@
 			<div class="row">
 				<div class="col-md-8">
 					<!-- largeboxposts -->
-					<?php largeboxposts_section(); ?>
+					<?php posts_section(largebox); ?>
 					<!-- /largeboxposts -->
 					<!-- smallboxposts -->
-					<?php smallboxposts_section('lifestyle'); ?>
-					<?php smallboxposts_section('health'); ?>
+					<?php posts_section(smallbox,'lifestyle'); ?>
+					<?php posts_section(smallbox,'','health'); ?>
 					<!-- /smallboxposts -->
+					<?php posts_section(listbox); ?>
 				</div>
 				<div class="col-md-4">
 					<?php //dynamic_sidebar('home-sidebar'); ?>
