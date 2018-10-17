@@ -1,7 +1,7 @@
 <?php
 /* Main */
 
-function blog_styles($style, $posts_to_show = '', $cat = ''){
+function blog_styles($style, $posts_to_show, $cat = ''){
 	if($cat){
 		$selectedtitle = $cat;
 	}else{
