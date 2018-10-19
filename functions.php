@@ -8,6 +8,7 @@
 	require get_template_directory(). '/includes/functions/callie_widgets.php';
 	require get_template_directory(). '/includes/functions/callie_nav_menu.php';
 	require get_template_directory(). '/includes/functions/callie_post_views_count.php';
+	require get_template_directory(). '/includes/functions/callie_cat_functions.php';
 
 /*=====================================================================*/
 

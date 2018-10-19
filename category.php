@@ -29,15 +29,22 @@
 						$post_cat_link = get_category_link($post_cat);
 						$post_cat_list .= '<a href="'.$post_cat_link.'">'.$post_cat_name.'</a> ';
 			}
-			/*if ($pnumb < 3) {cattoploop($pnumb);}*/
 			
 			cattoploop($pnumb);
+
 			catinloop($pnumb, $post_url, $thumb_url, $thumb_alt, $post_cat_list, $post_title, $post_author, $post_date, $grid_class, $post_excerpt);
 
-			$pnumb++;
+			
 			catbottomloop($pnumb);
-			/*if($pnumb == 5){catbottomloop($pnumb);}*/
+	
+			$pnumb++;
 		}
+		if($pnumb >= 10){
+		?>
+		<div class="section-row loadmore text-center">
+			<a href="#" class="primary-button">Load More</a>
+		</div>
+		<?php }
 		
 		
 	}
@@ -52,90 +59,3 @@
 	</div>
 	<!-- /SECTION -->
 <?php get_footer(); ?>
-
-<?php
-function cattoploop($pnumb){
-	switch ($pnumb) {
-		case '1':
-			
-			break;
-
-		case '2':
-			echo '<div class="row">';
-			break;
-		
-		default:
-			
-			break;
-	}
-}
-
-function catinloop($pnumb, $post_url, $thumb_url, $thumb_alt, $post_cat_list, $post_title, $post_author, $post_date, $grid_class, $post_excerpt){
-	switch ($pnumb) {
-		case '1':
-			?>
-					<div class="post post-thumb">
-						<a class="post-img" href="<?php echo $post_url; ?>"><img src="<?php echo $thumb_url; ?>" alt="<?php echo $thumb_alt; ?>"></a>
-						<div class="post-body">
-							<div class="post-category">
-								<?php echo $post_cat_list; ?>
-							</div>
-							<h3 class="post-title title-lg"><a href="<?php echo $post_url; ?>"><?php echo $post_title; ?></a></h3>
-							<ul class="post-meta">
-								<li><?php echo $post_author; ?></li>
-								<li><?php echo $post_date; ?></li>
-							</ul>
-						</div>
-					</div>
-			<?php
-			break;
-
-		case '2':
-		case '3':
-		case '4':
-		case '5':
-			?>
-						<!-- post -->
-						<div class="col-md-6">
-							<div class="post">
-								<a class="post-img" href="<?php echo $post_url; ?>"><img src="<?php echo $thumb_url; ?>" alt="<?php echo $thumb_alt; ?>"></a>
-								<div class="post-body">
-									<div class="post-category">
-										<?php echo $post_cat_list; ?>
-									</div>
-									<h3 class="post-title"><a href="<?php echo $post_url; ?>"><?php echo $post_title; ?></a></h3>
-									<ul class="post-meta">
-										<li><?php echo $post_author; ?></li>
-										<li><?php echo $post_date; ?></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<!-- /post -->
-			<?php
-			break;
-		
-		default:
-			
-			break;
-	}
-}
-
-function catbottomloop($pnumb){
-	switch ($pnumb) {
-		case '1':
-		case '2':
-		case '3':
-			
-			break;
-
-		case '6':
-			//echo '</div>';
-			break;
-		
-		default:
-			
-			break;
-	}
-}
-?>
