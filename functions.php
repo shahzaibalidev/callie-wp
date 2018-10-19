@@ -25,10 +25,23 @@ function add_your_fields_meta_box() {
 add_action( 'add_meta_boxes', 'add_your_fields_meta_box' );
 
 function show_your_fields_meta_box(){
+	global $post;
 
-	echo '<input id="upload_image" type="text" size="36" name="upload_image" value="" />
-	<input id="upload_image_button" type="button" value="Upload Image" />';
+	$data = get_post_custom($post->ID);
+	$val = isset($data['custom_input']) ? esc_attr($data['custom_input'][0]) : '';
+
+	echo '<input type="text" name="custom_input" id="custom_input" value="'.$val.'" />';
 }
 
+add_action( "save_post", "save_detail" );
+function save_detail(){
+	global $post;
+
+	if(define('DOING_AUTOSAVE') && DOING_AUTOSAVE){
+		return $post->ID;
+	}
+
+	update_post_meta($post->ID, "custom_input", $_POST["custom_input"]);
+}
 
 ?>

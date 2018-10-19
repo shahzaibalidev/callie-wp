@@ -14,7 +14,7 @@
 					<!-- smallboxposts -->
 					<?php blog_styles('small', '3', 'health'); ?>
 					<!-- /smallboxposts -->
-					<?php blog_styles('list', '5', ''); ?>
+					<?php blog_styles('list', '30', ''); ?>
 				</div>
 				<div class="col-md-4">
 					<?php //dynamic_sidebar('home-sidebar'); ?>

@@ -1,12 +1,18 @@
-<?php get_header(); ?>
 <?php
 	setPostViews(get_the_ID());
 	if(have_posts()){
 		while(have_posts()){
 			the_post();
+			$custom_meta = get_post_meta($post->ID, 'custom_input', true);
 		}
 	}
-?>
+
+	
+ get_header();
+
+ echo $custom_meta;
+  ?>
+
 
 	<!-- SECTION -->
 	<div class="section">
