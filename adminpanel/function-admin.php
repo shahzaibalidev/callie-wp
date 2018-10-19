@@ -19,11 +19,11 @@
 
 		add_submenu_page(
 			'sa_admin_panel',	//Main Menu slug.
-			'Front Page',	//Page title.
-			'Front Page',	//Menu title.
+			'Theme Options',	//Page title.
+			'General',	//Menu title.
 			'manage_options',	//Capability.
-			'sa_admin_panel_css',	//Sub Menu slug.
-			'sa_admin_create_css_page'	//Callback Function.
+			'sa_admin_panel',	//Sub Menu slug.
+			'sa_admin_create_page'	//Callback Function.
 		);
 
 		//Generate Admin Panel Settings  SUB page.
