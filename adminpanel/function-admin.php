@@ -16,7 +16,7 @@
 			get_template_directory_uri(). '/adminpanel/assets/img/sa-admin-icon.png',	//Icon url.
 			2	//Position in the menu order.
 		);
-
+		//Generate Admin Panel  MAIN page SUB page on same Slug.
 		add_submenu_page(
 			'sa_admin_panel',	//Main Menu slug.
 			'Theme Options',	//Page title.
@@ -35,10 +35,21 @@
 			'sa_admin_panel_settings',	//Sub Menu slug.
 			'sa_admin_create_settings_page'	//Callback Function.
 		);
-		//Generate Admin Panel Settings  SUB page.
+		
+		//Active  Custom settings
+		add_action('admin_init', 'admin_custom_settings');
 		
 	}
 	add_action('admin_menu', 'sa_add_admin_page');
+
+	function admin_custom_settings(){
+		register_setting('sa-admin-settings-group', 'user_info');
+		add_settings_section( 'user-info-options', 'User Info Options', 'user_info_options', 'sa_admin_panel');
+	}
+
+	function user_info_options(){
+		echo 'Customize User settings';
+	}
 
 	function sa_admin_create_page(){
 		//Admin Panel main page.
