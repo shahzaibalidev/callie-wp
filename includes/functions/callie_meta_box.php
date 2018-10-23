@@ -7,7 +7,14 @@ function post_icon($post = 0){
       }
     echo $custom_meta['image'];
 }
-
+function get_post_icon($post = 0){
+  $post = get_post( $post );
+  $custom_meta = get_post_meta($post->ID, 'your_fields', true);
+    if (empty($custom_meta)) {
+        $custom_meta['image'] = 'https://dubsism.files.wordpress.com/2017/12/image-not-found.png?w=547';
+      }
+    return $custom_meta['image'];
+}
 
 function add_your_fields_meta_box1() {
 	add_meta_box(

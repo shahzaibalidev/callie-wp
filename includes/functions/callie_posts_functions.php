@@ -28,7 +28,8 @@ function blog_styles($style, $posts_to_show, $cat = ''){
 					$grid_class = ($i < 2) ? '<div class="col-md-8 hot-post-left">' : '<div class="col-md-4 hot-post-right">';}
 
 					$post_id = get_the_ID();
-					$thumb_url = (get_the_post_thumbnail_url()) ? get_the_post_thumbnail_url() : 'https://dubsism.files.wordpress.com/2017/12/image-not-found.png?w=547';
+					$thumb_url = get_post_icon();
+					/*$thumb_url = (get_the_post_thumbnail_url()) ? get_the_post_thumbnail_url() : 'https://dubsism.files.wordpress.com/2017/12/image-not-found.png?w=547';*/
 					$thumb_alt = get_the_post_thumbnail_caption();
 					$post_cats = get_the_category();
 					$post_cat_list = '';
