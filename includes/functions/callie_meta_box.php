@@ -66,6 +66,10 @@ function show_your_fields_meta_box1() {
         // Opens the media library frame.
         meta_image_frame.open();
       });
+      $('.image-remove').click(function (e){
+        $('.meta-image').attr('value', '');
+        $('.image-preview img').attr('src', '');
+      });
     });
   </script>
 
