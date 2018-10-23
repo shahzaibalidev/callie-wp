@@ -5,7 +5,7 @@ function add_your_fields_meta_box1() {
 		'Your Fields', // $title
 		'show_your_fields_meta_box1', // $callback
 		'post', // $screen
-		'normal', // $context
+		'side', // $context
 		'low' // $priority
 	);
 }
@@ -25,7 +25,8 @@ function show_your_fields_meta_box1() {
   
   <p>
     <label for="your_fields[image]">Image Upload</label><br>
-    <input type="text" name="your_fields[image]" id="your_fields[image]" class="meta-image regular-text" value="<?php echo $meta['image']; ?>">
+    <input type="text" name="your_fields[image]" id="your_fields[image]" class="meta-image" value="<?php echo $meta['image']; ?>" size="35" >
+    <br /><br />
     <input type="button" class="button image-upload" value="Browse">
     <input type="button" class="button image-remove" value="Remove">
   </p>
@@ -66,6 +67,7 @@ function show_your_fields_meta_box1() {
         // Opens the media library frame.
         meta_image_frame.open();
       });
+      // remove button.
       $('.image-remove').click(function (e){
         $('.meta-image').attr('value', '');
         $('.image-preview img').attr('src', '');
