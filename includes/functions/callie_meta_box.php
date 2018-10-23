@@ -1,7 +1,7 @@
 <?php
 function post_icon($post = 0){
   $post = get_post( $post );
-  $custom_meta = get_post_meta($post->ID, 'your_fields', true);
+  $custom_meta = get_post_meta($post->ID, 'post_icon', true);
     if (empty($custom_meta)) {
         $custom_meta['image'] = 'https://dubsism.files.wordpress.com/2017/12/image-not-found.png?w=547';
       }
@@ -9,28 +9,28 @@ function post_icon($post = 0){
 }
 function get_post_icon($post = 0){
   $post = get_post( $post );
-  $custom_meta = get_post_meta($post->ID, 'your_fields', true);
+  $custom_meta = get_post_meta($post->ID, 'post_icon', true);
     if (empty($custom_meta)) {
         $custom_meta['image'] = 'https://dubsism.files.wordpress.com/2017/12/image-not-found.png?w=547';
       }
     return $custom_meta['image'];
 }
 
-function add_your_fields_meta_box1() {
+function add_post_icon_meta_box() {
 	add_meta_box(
-		'your_fields_meta_box12', // $id
+		'post_icon_meta_box', // $id
 		'Post Icon', // $title
-		'show_your_fields_meta_box1', // $callback
+		'show_post_icon_meta_box', // $callback
 		'post', // $screen
 		'side', // $context
 		'low' // $priority
 	);
 }
-add_action( 'add_meta_boxes', 'add_your_fields_meta_box1' );
-function show_your_fields_meta_box1() {
+add_action( 'add_meta_boxes', 'add_post_icon_meta_box' );
+function show_post_icon_meta_box() {
     global $post;  
     
-		$meta = get_post_meta( $post->ID, 'your_fields', true );
+		$meta = get_post_meta( $post->ID, 'post_icon', true );
     
     if (empty($meta)) {
       $meta['image'] = '';
@@ -41,8 +41,8 @@ function show_your_fields_meta_box1() {
 
   
   <p>
-    <label for="your_fields[image]">Image Upload</label><br>
-    <input type="text" name="your_fields[image]" id="your_fields[image]" class="meta-image" value="<?php echo $meta['image']; ?>" size="35" >
+    <label for="post_icon[image]">Select Image Size of 700 × 467</label><br>
+    <input type="text" name="post_icon[image]" id="post_icon[image]" class="meta-image" value="<?php echo $meta['image']; ?>" size="35" >
     <br /><br />
     <input type="button" class="button image-upload" value="Browse">
     <input type="button" class="button image-remove" value="Remove" style="color: #bc0b0b; font-weight:bold;">
@@ -93,7 +93,7 @@ function show_your_fields_meta_box1() {
   </script>
 
   <?php }
-function save_your_fields_meta( $post_id ) {   
+function save_post_icon_meta( $post_id ) {   
 	// verify nonce
 	if ( isset($_POST['your_meta_box_nonce']) 
 			&& !wp_verify_nonce( $_POST['your_meta_box_nonce'], basename(__FILE__) ) ) {
@@ -114,15 +114,15 @@ function save_your_fields_meta( $post_id ) {
         }
     }
 	
-	$old = get_post_meta( $post_id, 'your_fields', true );
-		if (isset($_POST['your_fields'])) { //Fix 3
-			$new = $_POST['your_fields'];
+	$old = get_post_meta( $post_id, 'post_icon', true );
+		if (isset($_POST['post_icon'])) { //Fix 3
+			$new = $_POST['post_icon'];
 			if ( $new && $new !== $old ) {
-				update_post_meta( $post_id, 'your_fields', $new );
+				update_post_meta( $post_id, 'post_icon', $new );
 			} elseif ( '' === $new && $old ) {
-				delete_post_meta( $post_id, 'your_fields', $old );
+				delete_post_meta( $post_id, 'post_icon', $old );
 			}
 		}
 }
-add_action( 'save_post', 'save_your_fields_meta' );
+add_action( 'save_post', 'save_post_icon_meta' );
 ?>

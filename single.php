@@ -3,14 +3,11 @@
 	if(have_posts()){
 		while(have_posts()){
 			the_post();
-			$custom_meta = get_post_meta($post->ID, 'your_fields', true);
 		}
 	}
 
 	
  get_header();
-
- echo $custom_meta['image'];
   ?>
 
 
@@ -50,19 +47,19 @@
 					<div class="section-row">
 						<div class="post-nav">
 							<?php $prevPost = get_previous_post();
-							$prevthumbnail = get_the_post_thumbnail($prevPost->ID);
+							$prevthumbnail = get_post_icon($prevPost->ID);
 							if($prevPost) {?>
 							<div class="prev-post">
-								 <a class="post-img"><?php echo $prevthumbnail; ?></a>
+								 <a class="post-img"><img src="<?php echo $prevthumbnail; ?>" alt=""></a>
 								<h3 class="post-title"><?php previous_post( $format = '%', $previous = '', $title = 'yes', $in_same_cat = 'no', $limitprev = 1, $excluded_categories = '' ) ?></h3>
 								<span>Previous post</span>
 							</div>
 
 							<?php } $nextPost = get_next_post();
-							$nextthumbnail = get_the_post_thumbnail($nextPost->ID);
+							$nextthumbnail = get_post_icon($nextPost->ID);
 							if($nextPost){ ?>
 							<div class="next-post">
-								<a class="post-img"><?php echo $nextthumbnail; ?></a>
+								<a class="post-img"><img src="<?php echo $nextthumbnail; ?>" alt=""></a>
 								<h3 class="post-title"><?php next_post( $format = '%', $next = '', $title = 'yes', $in_same_cat = 'no', $limitnext = 1, $excluded_categories = '' ) ?></h3>
 								<span>Next post</span>
 							</div>
