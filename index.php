@@ -12,7 +12,7 @@
 						while(have_posts()){the_post(); ?>
 							<!-- post -->
 							<div class="post post-row">
-								<a class="post-img" href="<?php the_permalink(); ?>"><img src="<?php the_post_thumbnail_url(); ?>" alt=""></a>
+								<a class="post-img" href="<?php the_permalink(); ?>"><img src="<?php post_icon(); ?>" alt=""></a>
 								<div class="post-body">
 									<div class="post-category">
 										<?php the_category(' '); ?>

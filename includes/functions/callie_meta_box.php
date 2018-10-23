@@ -1,8 +1,18 @@
 <?php
+function post_icon($post = 0){
+  $post = get_post( $post );
+  $custom_meta = get_post_meta($post->ID, 'your_fields', true);
+    if (empty($custom_meta)) {
+        $custom_meta['image'] = 'https://dubsism.files.wordpress.com/2017/12/image-not-found.png?w=547';
+      }
+    echo $custom_meta['image'];
+}
+
+
 function add_your_fields_meta_box1() {
 	add_meta_box(
 		'your_fields_meta_box12', // $id
-		'Your Fields', // $title
+		'Post Icon', // $title
 		'show_your_fields_meta_box1', // $callback
 		'post', // $screen
 		'side', // $context
@@ -28,7 +38,7 @@ function show_your_fields_meta_box1() {
     <input type="text" name="your_fields[image]" id="your_fields[image]" class="meta-image" value="<?php echo $meta['image']; ?>" size="35" >
     <br /><br />
     <input type="button" class="button image-upload" value="Browse">
-    <input type="button" class="button image-remove" value="Remove">
+    <input type="button" class="button image-remove" value="Remove" style="color: #bc0b0b; font-weight:bold;">
   </p>
   <div class="image-preview"><img src="<?php echo $meta['image']; ?>" style="max-width: 250px;"></div>
 

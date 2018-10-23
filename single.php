@@ -3,14 +3,14 @@
 	if(have_posts()){
 		while(have_posts()){
 			the_post();
-			$custom_meta = get_post_meta($post->ID, 'custom_input', true);
+			$custom_meta = get_post_meta($post->ID, 'your_fields', true);
 		}
 	}
 
 	
  get_header();
 
- echo $custom_meta;
+ echo $custom_meta['image'];
   ?>
 
 
