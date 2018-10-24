@@ -57,11 +57,33 @@
 
 	//07: Callback function of 06 Admin Panel custom general settings.
 	function admin_panel_custom_general(){
+		/*===================================================*/
 		//Using Hooks apis.
 		register_setting(
 			'admin-panel-general-group', //Option Group.
 			'header_logo' //Option Name.
 		);
+		register_setting(
+			'admin-panel-general-group', //Option Group.
+			'footer_logo' //Option Name.
+		);
+		register_setting(
+			'admin-panel-general-group', //Option Group.
+			'facebook_handler' //Option Name.
+		);
+		register_setting(
+			'admin-panel-general-group', //Option Group.
+			'twitter_handler' //Option Name.
+		);
+		register_setting(
+			'admin-panel-general-group', //Option Group.
+			'googleplus_handler' //Option Name.
+		);
+		register_setting(
+			'admin-panel-general-group', //Option Group.
+			'instagram_handler' //Option Name.
+		);
+		/*===================================================*/
 		//08: Settings Section.
 		add_settings_section(
 			'admin-panel-general-options', //ID.
@@ -69,6 +91,7 @@
 			'admin_panel_general_options', //Callback fuction.
 			'admin_panel' //page.
 		);
+		/*===================================================*/
 		//10: Adding setting fields.
 		add_settings_field(
 			'header-logo', //ID.
@@ -78,6 +101,47 @@
 			'admin-panel-general-options' //section.
 			//args or Array.
 		);
+		add_settings_field(
+			'footer-logo', //ID.
+			'footer Logo', //Title.
+			'footer_logo', //Callback function.
+			'admin_panel', //page.
+			'admin-panel-general-options' //section.
+			//args or Array.
+		);
+		add_settings_field(
+			'facebook-handler', //ID.
+			'Facebook', //Title.
+			'facebook_handler', //Callback function.
+			'admin_panel', //page.
+			'admin-panel-general-options' //section.
+			//args or Array.
+		);
+		add_settings_field(
+			'twitter-handler', //ID.
+			'Twitter', //Title.
+			'twitter_handler', //Callback function.
+			'admin_panel', //page.
+			'admin-panel-general-options' //section.
+			//args or Array.
+		);
+		add_settings_field(
+			'googleplus-handler', //ID.
+			'Google Plus', //Title.
+			'googleplus_handler', //Callback function.
+			'admin_panel', //page.
+			'admin-panel-general-options' //section.
+			//args or Array.
+		);
+		add_settings_field(
+			'instagram-handler', //ID.
+			'Instaram', //Title.
+			'instagram_handler', //Callback function.
+			'admin_panel', //page.
+			'admin-panel-general-options' //section.
+			//args or Array.
+		);
+		/*===================================================*/
 	}
 
 	//09: Callback function of 08 admin_panel_general_options.
@@ -85,9 +149,36 @@
 		echo 'Customize General Settings';
 	}
 
+	/*===================================================*/
 	//11: Callback function of 10 general_logo.
 	function header_logo(){
 		$headerLogo = esc_attr( get_option( 'header_logo' ) );
 		echo '<input type="text" name="header_logo" value="'.$headerLogo.'" placeholder="Header Logo"/>';
 	}
+
+	function footer_logo(){
+		$footerLogo = esc_attr( get_option( 'footer_logo' ) );
+		echo '<input type="text" name="footer_logo" value="'.$footerLogo.'" placeholder="Footer Logo"/>';
+	}
+
+	function facebook_handler(){
+		$facebook = esc_attr( get_option( 'facebook_handler' ) );
+		echo '<input type="text" name="facebook_handler" value="'.$facebook.'" placeholder="Facebook"/>';
+	}
+
+	function twitter_handler(){
+		$twitter = esc_attr( get_option( 'twitter_handler' ) );
+		echo '<input type="text" name="twitter_handler" value="'.$twitter.'" placeholder="Twitter"/>';
+	}
+
+	function googleplus_handler(){
+		$googleplus = esc_attr( get_option( 'googleplus_handler' ) );
+		echo '<input type="text" name="googleplus_handler" value="'.$googleplus.'" placeholder="Google Plus"/>';
+	}
+
+	function instagram_handler(){
+		$instagram = esc_attr( get_option( 'instagram_handler' ) );
+		echo '<input type="text" name="instagram_handler" value="'.$instagram.'" placeholder="Instagram"/>';
+	}
+	/*===================================================*/
 ?>
