@@ -18,6 +18,16 @@
 			2	//Position in the menu order.
 		);
 
+		//05: Customizing First SUB menu title.
+		add_submenu_page(
+			'admin_panel',	//Main Menu slug.
+			'Admin Panel General',	//Page title.
+			'General',	//Menu title.
+			'manage_options',	//Capability.
+			'admin_panel',	//Sub Menu slug.
+			'admin_panel_create_page'	//Callback Function.
+		);
+
 		//02: Generate Admin Panel Settings  SUB page.
 		add_submenu_page(
 			'admin_panel',	//Main Menu slug.
