@@ -1,6 +1,6 @@
 <?php
 	//Admin Panel
-	require get_template_directory(). '/adminpanel/function-admin.php';
+	require get_template_directory(). '/adminpanel/admin_panel.php';
 	// Functions Files.
 	require get_template_directory(). '/includes/functions/callie_style.php';
 	require get_template_directory(). '/includes/functions/callie_posts_functions.php';

@@ -44,14 +44,14 @@
 	//04: Callback function of 01 & 02 Admin Panel  MAIN page.
 	function admin_panel_create_page(){
 		//adding General page php file.
-		require_once( get_template_directory(). '/adminpanel/includes/admin_panel_general.php');
+		require_once( get_template_directory(). '/adminpanel/includes/pages/admin_panel_general.php');
 
 	}
 
 	//05: Callback function of 03 Admin Panel Settings  SUB page.
 	function admin_panel_create_settings_page(){
 		//adding Settings page php file.
-		require_once( get_template_directory(). '/adminpanel/includes/admin_panel_settings.php');
+		require_once( get_template_directory(). '/adminpanel/includes/pages/admin_panel_settings.php');
 
 	}
 
@@ -69,7 +69,12 @@
 		);
 		register_setting(
 			'admin-panel-general-group', //Option Group.
-			'facebook_handler' //Option Name.
+			'footer_description' //Option Name.
+		);
+		register_setting(
+			'admin-panel-general-group', //Option Group.
+			'facebook_handler', //Option Name.
+			'sanitize_facebook_handler' //sanitize Callback.
 		);
 		register_setting(
 			'admin-panel-general-group', //Option Group.
@@ -110,6 +115,14 @@
 			//args or Array.
 		);
 		add_settings_field(
+			'footer-description', //ID.
+			'footer Description', //Title.
+			'footer_description', //Callback function.
+			'admin_panel', //page.
+			'admin-panel-general-options' //section.
+			//args or Array.
+		);
+		add_settings_field(
 			'facebook-handler', //ID.
 			'Facebook', //Title.
 			'facebook_handler', //Callback function.
@@ -135,7 +148,7 @@
 		);
 		add_settings_field(
 			'instagram-handler', //ID.
-			'Instaram', //Title.
+			'Instagram', //Title.
 			'instagram_handler', //Callback function.
 			'admin_panel', //page.
 			'admin-panel-general-options' //section.
@@ -161,24 +174,38 @@
 		echo '<input type="text" name="footer_logo" value="'.$footerLogo.'" placeholder="Footer Logo"/>';
 	}
 
+	function footer_description(){
+		$footerDescription = esc_attr( get_option( 'footer_description' ) );
+		echo '<input type="text" name="footer_description" value="'.$footerdescription.'" placeholder="Footer Description"/>';
+	}
+
 	function facebook_handler(){
 		$facebook = esc_attr( get_option( 'facebook_handler' ) );
-		echo '<input type="text" name="facebook_handler" value="'.$facebook.'" placeholder="Facebook"/>';
+		echo '<input type="text" name="facebook_handler" value="'.$facebook.'" placeholder="Facebook"/><p class="description">Add Facebook Page url.</p>';
 	}
 
 	function twitter_handler(){
 		$twitter = esc_attr( get_option( 'twitter_handler' ) );
-		echo '<input type="text" name="twitter_handler" value="'.$twitter.'" placeholder="Twitter"/>';
+		echo '<input type="text" name="twitter_handler" value="'.$twitter.'" placeholder="Twitter"/><p class="description">Add Twitter Profile url.</p>';
 	}
 
 	function googleplus_handler(){
 		$googleplus = esc_attr( get_option( 'googleplus_handler' ) );
-		echo '<input type="text" name="googleplus_handler" value="'.$googleplus.'" placeholder="Google Plus"/>';
+		echo '<input type="text" name="googleplus_handler" value="'.$googleplus.'" placeholder="Google Plus"/><p class="description">Add Google Plus Profile url.</p>';
 	}
 
 	function instagram_handler(){
 		$instagram = esc_attr( get_option( 'instagram_handler' ) );
-		echo '<input type="text" name="instagram_handler" value="'.$instagram.'" placeholder="Instagram"/>';
+		echo '<input type="text" name="instagram_handler" value="'.$instagram.'" placeholder="Instagram"/><p class="description">Add Instagram Account url.</p>';
 	}
 	/*===================================================*/
+	/* sanitize functions */
+
+	function sanitize_facebook_handler( $input ){
+		$output = sanitize_text_field( $input );
+		return $output;
+	}
+	/* sanitize functions END */
+	/*===================================================*/
+
 ?>
