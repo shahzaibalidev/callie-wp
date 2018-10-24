@@ -125,4 +125,24 @@ function save_post_icon_meta( $post_id ) {
 		}
 }
 add_action( 'save_post', 'save_post_icon_meta' );
+
+add_filter( 'user_contactmethods', 'tgm_io_custom_contact_info' );
+/**
+ * Removes legacy contact fields and adds support for LinkedIn.
+ *
+ * @param array $fields  Array of default contact fields.
+ * @return array $fields Amended array of contact fields.
+ */
+function tgm_io_custom_contact_info( $fields ) {
+          
+    $fields['facebook'] = __( 'Facebook' );
+    $fields['twitter'] = __('Twitter');
+    $fields['googleplus'] = __('Google Plus');
+    $fields['instagram'] = __('Instagram');
+     
+    // Return the amended contact fields.
+    return $fields;
+     
+}
+
 ?>

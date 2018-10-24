@@ -82,10 +82,10 @@
 							<div class="media-body">
 								<p><?php the_author_meta('description'); ?></p>
 								<ul class="author-social">
-									<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-									<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-									<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-									<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+									<li><a href="<?php the_author_meta( 'facebook', get_current_user_id() ); ?>"><i class="fa fa-facebook"></i></a></li>
+									<li><a href="<?php the_author_meta( 'twitter', get_current_user_id() ); ?>"><i class="fa fa-twitter"></i></a></li>
+									<li><a href="<?php the_author_meta( 'googleplus', get_current_user_id() ); ?>"><i class="fa fa-google-plus"></i></a></li>
+									<li><a href="<?php the_author_meta( 'instagram', get_current_user_id() ); ?>"><i class="fa fa-instagram"></i></a></li>
 								</ul>
 							</div>
 						</div>

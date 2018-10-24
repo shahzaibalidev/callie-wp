@@ -140,6 +140,31 @@
 		<!-- /PAGE HEADER -->
 		<?php
 		}
+		if(is_author()){
 		?>
+	<!-- PAGE HEADER -->
+		<div class="page-header">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-offset-1 col-md-10 text-center">
+						<div class="author">
+							<img class="author-img center-block" src="<?php echo get_avatar_url(get_the_author_meta('ID')); ?>" alt="">
+							<h1 class="text-uppercase"><?php the_author_meta('display_name'); ?></h1>
+							<p class="lead"><?php the_author_meta('description'); ?></p>
+							<ul class="author-social">
+								<li><a href="<?php the_author_meta( 'facebook', get_current_user_id() ); ?>"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="<?php the_author_meta( 'twitter', get_current_user_id() ); ?>"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="<?php the_author_meta( 'googleplus', get_current_user_id() ); ?>"><i class="fa fa-google-plus"></i></a></li>
+								<li><a href="<?php the_author_meta( 'instagram', get_current_user_id() ); ?>"><i class="fa fa-instagram"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	<!-- /PAGE HEADER -->
+	<?php
+	}
+	 ?>
 	</header>
 	<!-- /HEADER -->
