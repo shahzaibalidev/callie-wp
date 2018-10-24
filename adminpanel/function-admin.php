@@ -37,18 +37,26 @@
 			'admin_panel_settings',	//Sub Menu slug.
 			'admin_panel_create_settings_page'	//Callback Function.
 		);
+
+		//06: Adding Admin Panel custom settings function.
+		add_action('admin_init', 'admin_panel_custom_settings');
 	}
 	//04: Callback function of 01 & 02 Admin Panel  MAIN page.
 	function admin_panel_create_page(){
-		//General page.
-		echo '<h1>General</h1>';
+		//adding General page php file.
+		require_once( get_template_directory(). '/adminpanel/includes/admin_panel_general.php');
 
 	}
 
 	//05: Callback function of 03 Admin Panel Settings  SUB page.
 	function admin_panel_create_settings_page(){
-		//Settings page.
-		echo '<h1>Settings</h1>';
+		//adding Settings page php file.
+		require_once( get_template_directory(). '/adminpanel/includes/admin_panel_settings.php');
+
+	}
+
+	//07: Callback function of 06 Admin Panel custom settings.
+	function admin_panel_custom_settings(){
 
 	}
 ?>
