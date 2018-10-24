@@ -18,7 +18,7 @@
 			2	//Position in the menu order.
 		);
 
-		//05: Customizing First SUB menu title.
+		//02: Customizing First SUB menu title.
 		add_submenu_page(
 			'admin_panel',	//Main Menu slug.
 			'Admin Panel General',	//Page title.
@@ -28,7 +28,7 @@
 			'admin_panel_create_page'	//Callback Function.
 		);
 
-		//02: Generate Admin Panel Settings  SUB page.
+		//03: Generate Admin Panel Settings  SUB page.
 		add_submenu_page(
 			'admin_panel',	//Main Menu slug.
 			'Admin Panel Settings',	//Page title.
@@ -38,12 +38,12 @@
 			'admin_panel_create_settings_page'	//Callback Function.
 		);
 	}
-	//03: Callback function of 01 Admin Panel  MAIN page.
+	//04: Callback function of 01 & 02 Admin Panel  MAIN page.
 	function admin_panel_create_page(){
 
 	}
 
-	//04: Callback function of 02 Admin Panel Settings  SUB page.
+	//05: Callback function of 03 Admin Panel Settings  SUB page.
 	function admin_panel_create_settings_page(){
 
 	}
