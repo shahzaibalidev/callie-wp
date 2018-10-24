@@ -40,11 +40,15 @@
 	}
 	//04: Callback function of 01 & 02 Admin Panel  MAIN page.
 	function admin_panel_create_page(){
+		//General page.
+		echo '<h1>General</h1>';
 
 	}
 
 	//05: Callback function of 03 Admin Panel Settings  SUB page.
 	function admin_panel_create_settings_page(){
+		//Settings page.
+		echo '<h1>Settings</h1>';
 
 	}
 ?>
