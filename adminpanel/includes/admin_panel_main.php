@@ -41,6 +41,8 @@
 		//06: Adding Admin Panel custom general settings function.
 		add_action('admin_init', 'admin_panel_custom_general');
 	}
+
+	
 	//04: Callback function of 01 & 02 Admin Panel  MAIN page.
 	function admin_panel_create_page(){
 		//adding General page php file.
@@ -166,12 +168,12 @@
 	//11: Callback function of 10 general_logo.
 	function header_logo(){
 		$headerLogo = esc_attr( get_option( 'header_logo' ) );
-		echo '<input type="text" name="header_logo" value="'.$headerLogo.'" placeholder="Header Logo"/>';
+		echo '<input type="button" class="button  button-secondary" value="Upload Header Logo" id="header-button"/> <input type="hidden" id="header-logo" name="header_logo" value="'.$headerLogo.'" /><br /><br />';
 	}
 
 	function footer_logo(){
 		$footerLogo = esc_attr( get_option( 'footer_logo' ) );
-		echo '<input type="text" name="footer_logo" value="'.$footerLogo.'" placeholder="Footer Logo"/>';
+		echo '<input type="button" class="button  button-secondary" value="Upload Footer Logo" id="footer-button"/> <input type="hidden" id="footer-logo" name="footer_logo" value="'.$footerLogo.'" />';
 	}
 
 	function footer_description(){
