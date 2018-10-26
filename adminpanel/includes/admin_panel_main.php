@@ -110,7 +110,7 @@
 		);
 		add_settings_field(
 			'footer-logo', //ID.
-			'footer Logo', //Title.
+			'Footer Logo', //Title.
 			'footer_logo', //Callback function.
 			'admin_panel', //page.
 			'admin-panel-general-options' //section.
@@ -118,7 +118,7 @@
 		);
 		add_settings_field(
 			'footer-description', //ID.
-			'footer Description', //Title.
+			'Footer Description', //Title.
 			'footer_description', //Callback function.
 			'admin_panel', //page.
 			'admin-panel-general-options' //section.
@@ -178,7 +178,7 @@
 
 	function footer_description(){
 		$footerDescription = esc_attr( get_option( 'footer_description' ) );
-		echo '<input type="text" name="footer_description" value="'.$footerdescription.'" placeholder="Footer Description"/>';
+		echo '<input type="text" name="footer_description" value="'.$footerDescription.'" placeholder="Footer Description"/>';
 	}
 
 	function facebook_handler(){

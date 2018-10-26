@@ -1,3 +1,10 @@
+<?php
+$headerLogo = esc_attr( get_option( 'header_logo' ) );
+$GLOBALS[ 'facebook' ] = esc_attr( get_option( 'facebook_handler', 'admin_panel' ) );
+$GLOBALS[ 'twitter' ] = esc_attr( get_option( 'twitter_handler' ) );
+$GLOBALS[ 'googleplus'] = esc_attr( get_option( 'googleplus_handler' ) );
+$GLOBALS[ 'instagram'] = esc_attr( get_option( 'instagram_handler' ) );
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,16 +23,16 @@
 				<div class="container">
 					<!-- social -->
 					<ul class="nav-social">
-						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-						<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-						<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+						<li><a href="<?php echo $GLOBALS[ 'facebook']; ?>"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="<?php echo $GLOBALS[ 'twitter']; ?>"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="<?php echo $GLOBALS[ 'googleplus']; ?>"><i class="fa fa-google-plus"></i></a></li>
+						<li><a href="<?php echo $GLOBALS[ 'instagram']; ?>"><i class="fa fa-instagram"></i></a></li>
 					</ul>
 					<!-- /social -->
 
 					<!-- logo -->
 					<div class="nav-logo">
-						<a href="<?php echo site_url()?>" class="logo"><img src="<?php echo get_theme_file_uri('/assets/img/logo.png')?>" alt=""></a>
+						<a href="<?php echo site_url()?>" class="logo"><img src="<?php print $headerLogo; ?>" alt=""></a>
 					</div>
 					<!-- /logo -->
 
