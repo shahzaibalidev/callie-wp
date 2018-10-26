@@ -51,4 +51,11 @@ jQuery(document).ready(function($){
 
 		mediaUploader1.open();
 	});
+
+	$('#remove-header-button').on('click',function(e) {
+		e.preventDefault();
+		
+	});
+
+
 });

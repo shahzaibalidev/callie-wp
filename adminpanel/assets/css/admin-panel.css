@@ -2,6 +2,8 @@
 Admin Panel Style
 */
 
+.heading h1 { text-align: center; }
+
 .general-form,
 .general-preview { display: inline-block; float: left; }
 

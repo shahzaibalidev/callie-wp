@@ -1,4 +1,6 @@
+<div class="heading">
 <h1>Admin Panel General</h1>
+</div>
 <?php settings_errors(); ?>
 <?php
 	$headerLogo = esc_attr( get_option( 'header_logo' ) );

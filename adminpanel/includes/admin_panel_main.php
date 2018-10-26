@@ -168,7 +168,13 @@
 	//11: Callback function of 10 general_logo.
 	function header_logo(){
 		$headerLogo = esc_attr( get_option( 'header_logo' ) );
-		echo '<input type="button" class="button  button-secondary" value="Upload Header Logo" id="header-button"/> <input type="hidden" id="header-logo" name="header_logo" value="'.$headerLogo.'" /><br /><br />';
+		if( empty($headerLogo) ){
+			echo '<input type="button" class="button  button-secondary" value="Upload Header Logo" id="header-button"/> <input type="hidden" id="header-logo" name="header_logo" value="" />';
+		} else{
+			echo '<input type="button" class="button  button-secondary" value="Replace Header Logo" id="header-button"/> <input type="hidden" id="header-logo" name="header_logo" value="'.$headerLogo.'" /><input type="button" class="button  button-secondary" value="Remove" id="remove-header-button"/>';
+		}
+		
+		echo '<br /><br />';
 	}
 
 	function footer_logo(){
