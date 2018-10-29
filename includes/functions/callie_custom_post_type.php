@@ -35,6 +35,7 @@ function awesome_custom_post_type (){
 			'excerpt',
 			'thumbnail',
 			'revisions',
+			'author',
 		),
 		'taxonomies' => array('category', 'post_tag'),
 		'menu_position' => 5,
