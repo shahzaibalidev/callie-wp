@@ -193,22 +193,22 @@
 
 	function facebook_handler(){
 		$facebook = esc_attr( get_option( 'facebook_handler' ) );
-		echo '<input type="text" name="facebook_handler" value="'.$facebook.'" placeholder="Facebook"/><p class="description">Add Facebook Page url.</p>';
+		echo '<input type="text" class="regular-text code" name="facebook_handler" value="'.$facebook.'" placeholder="Facebook"/><p class="description">Add Facebook Page url.</p>';
 	}
 
 	function twitter_handler(){
 		$twitter = esc_attr( get_option( 'twitter_handler' ) );
-		echo '<input type="text" name="twitter_handler" value="'.$twitter.'" placeholder="Twitter"/><p class="description">Add Twitter Profile url.</p>';
+		echo '<input type="text" class="regular-text code" name="twitter_handler" value="'.$twitter.'" placeholder="Twitter"/><p class="description">Add Twitter Profile url.</p>';
 	}
 
 	function googleplus_handler(){
 		$googleplus = esc_attr( get_option( 'googleplus_handler' ) );
-		echo '<input type="text" name="googleplus_handler" value="'.$googleplus.'" placeholder="Google Plus"/><p class="description">Add Google Plus Profile url.</p>';
+		echo '<input type="text" class="regular-text code" name="googleplus_handler" value="'.$googleplus.'" placeholder="Google Plus"/><p class="description">Add Google Plus Profile url.</p>';
 	}
 
 	function instagram_handler(){
 		$instagram = esc_attr( get_option( 'instagram_handler' ) );
-		echo '<input type="text" name="instagram_handler" value="'.$instagram.'" placeholder="Instagram"/><p class="description">Add Instagram Account url.</p>';
+		echo '<input type="text" class="regular-text code" name="instagram_handler" value="'.$instagram.'" placeholder="Instagram"/><p class="description">Add Instagram Account url.</p>';
 	}
 	/*===================================================*/
 	/* sanitize functions */
