@@ -188,7 +188,7 @@
 
 	function footer_description(){
 		$footerDescription = esc_attr( get_option( 'footer_description' ) );
-		echo '<textarea name="footer_description" cols="50" rows="5" placeholder="Footer Description">'.$footerDescription.'</textarea>';
+		echo '<textarea name="footer_description" cols="53" rows="5" placeholder="Footer Description">'.$footerDescription.'</textarea>';
 	}
 
 	function facebook_handler(){

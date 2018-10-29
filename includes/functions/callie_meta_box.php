@@ -17,11 +17,12 @@ function get_post_icon($post = 0){
 }
 
 function add_post_icon_meta_box() {
-	add_meta_box(
+	$screen = array('post', 'portfolio' );
+  add_meta_box(
 		'post_icon_meta_box', // $id
 		'Post Icon', // $title
 		'show_post_icon_meta_box', // $callback
-		'post', // $screen
+    $screen, // $screen
 		'side', // $context
 		'low' // $priority
 	);

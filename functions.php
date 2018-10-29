@@ -10,6 +10,7 @@
 	require get_template_directory(). '/includes/functions/callie_post_views_count.php';
 	require get_template_directory(). '/includes/functions/callie_cat_functions.php';
 	require get_template_directory(). '/includes/functions/callie_meta_box.php';
+	require get_template_directory(). '/includes/functions/callie_custom_post_type.php';
 	require get_template_directory(). '/includes/functions/test.php';
 
 /*=====================================================================*/
