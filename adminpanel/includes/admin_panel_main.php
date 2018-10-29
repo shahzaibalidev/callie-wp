@@ -179,12 +179,16 @@
 
 	function footer_logo(){
 		$footerLogo = esc_attr( get_option( 'footer_logo' ) );
-		echo '<input type="button" class="button  button-secondary" value="Upload Footer Logo" id="footer-button"/> <input type="hidden" id="footer-logo" name="footer_logo" value="'.$footerLogo.'" />';
+		if( empty($footerLogo) ){
+			echo '<input type="button" class="button  button-secondary" value="Upload Footer Logo" id="footer-button"/> <input type="hidden" id="footer-logo" name="footer_logo" value="'.$footerLogo.'" />';
+		}else {
+			echo '<input type="button" class="button  button-secondary" value="Replace Footer Logo" id="footer-button"/> <input type="hidden" id="footer-logo" name="footer_logo" value="'.$footerLogo.'" /><input type="button" class="button  button-secondary" value="Remove" id="remove-footer-button"/>';
+		}
 	}
 
 	function footer_description(){
 		$footerDescription = esc_attr( get_option( 'footer_description' ) );
-		echo '<input type="text" name="footer_description" value="'.$footerDescription.'" placeholder="Footer Description"/>';
+		echo '<textarea name="footer_description" cols="50" rows="5" placeholder="Footer Description">'.$footerDescription.'</textarea>';
 	}
 
 	function facebook_handler(){

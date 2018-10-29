@@ -54,7 +54,24 @@ jQuery(document).ready(function($){
 
 	$('#remove-header-button').on('click',function(e) {
 		e.preventDefault();
-		
+		var answer1 = confirm("Are you sure to remove Logo!");
+		if(answer1 == true){
+			$('#header-logo').val('');
+			$('#header-logo-view').attr('src', '');
+			$('.general-form').submit();
+		}
+		return;
+	});
+
+	$('#remove-footer-button').on('click',function(e) {
+		e.preventDefault();
+		var answer2 = confirm("Are you sure to remove Logo!");
+		if(answer2 == true){
+			$('#footer-logo').val('');
+			$('#footer-logo-view').attr('src', '');
+			$('.general-form').submit();
+		}
+		return;
 	});
 
 

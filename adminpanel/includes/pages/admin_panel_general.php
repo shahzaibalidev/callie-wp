@@ -25,5 +25,5 @@
 <form method="post" action="options.php" class="general-form">
 	<?php settings_fields('admin-panel-general-group'); ?>
 	<?php do_settings_sections('admin_panel'); ?>
-	<?php submit_button(); ?>
+	<?php submit_button('Save Changes', 'primary', 'btnSubmit'); ?>
 </form>
