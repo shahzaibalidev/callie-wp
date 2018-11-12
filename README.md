@@ -1,2 +1,1 @@
 # callie-wp
-# Wordpress Theme

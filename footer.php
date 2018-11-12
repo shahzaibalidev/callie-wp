@@ -1,3 +1,7 @@
+<?php
+$footerLogo = esc_attr( get_option( 'footer_logo' ) );
+$footerDescription = esc_attr( get_option( 'footer_description' ) );
+?>
 	<!-- FOOTER -->
 	<footer id="footer">
 		<!-- container -->
@@ -7,14 +11,14 @@
 				<div class="col-md-3">
 					<div class="footer-widget">
 						<div class="footer-logo">
-							<a href="<?php echo site_url()?>" class="logo"><img src="<?php echo get_theme_file_uri('/assets/img/logo-alt.png')?>" alt=""></a>
+							<a href="<?php echo site_url()?>" class="logo"><img src="<?php print $footerLogo; ?>" alt=""></a>
 						</div>
-						<p>Nec feugiat nisl pretium fusce id velit ut tortor pretium. Nisl purus in mollis nunc sed. Nunc non blandit massa enim nec.</p>
+						<p><?php print $footerDescription; ?></p>
 						<ul class="contact-social">
-							<li><a href="#" class="social-facebook"><i class="fa fa-facebook"></i></a></li>
-							<li><a href="#" class="social-twitter"><i class="fa fa-twitter"></i></a></li>
-							<li><a href="#" class="social-google-plus"><i class="fa fa-google-plus"></i></a></li>
-							<li><a href="#" class="social-instagram"><i class="fa fa-instagram"></i></a></li>
+							<li><a href="<?php echo $GLOBALS[ 'facebook' ]; echo $facebook; ?>" class="social-facebook"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="<?php echo $GLOBALS[ 'twitter']; ?>" class="social-twitter"><i class="fa fa-twitter"></i></a></li>
+							<li><a href="<?php echo $GLOBALS[ 'googleplus']; ?>" class="social-google-plus"><i class="fa fa-google-plus"></i></a></li>
+							<li><a href="<?php echo $GLOBALS[ 'instagram']; ?>" class="social-instagram"><i class="fa fa-instagram"></i></a></li>
 						</ul>
 					</div>
 				</div>

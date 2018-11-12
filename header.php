@@ -1,3 +1,11 @@
+<?php
+$headerLogo = esc_attr( get_option( 'header_logo' ) );
+$GLOBALS[ 'facebook' ] = esc_attr( get_option( 'facebook_handler', 'admin_panel' ) );
+$GLOBALS[ 'twitter' ] = esc_attr( get_option( 'twitter_handler' ) );
+$GLOBALS[ 'googleplus'] = esc_attr( get_option( 'googleplus_handler' ) );
+$GLOBALS[ 'instagram'] = esc_attr( get_option( 'instagram_handler' ) );
+$GLOBALS[ 'userinfobox' ] = $option = esc_attr( get_option( 'user_info_box' ) );
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,16 +24,16 @@
 				<div class="container">
 					<!-- social -->
 					<ul class="nav-social">
-						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-						<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-						<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+						<li><a href="<?php echo $GLOBALS[ 'facebook']; ?>"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="<?php echo $GLOBALS[ 'twitter']; ?>"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="<?php echo $GLOBALS[ 'googleplus']; ?>"><i class="fa fa-google-plus"></i></a></li>
+						<li><a href="<?php echo $GLOBALS[ 'instagram']; ?>"><i class="fa fa-instagram"></i></a></li>
 					</ul>
 					<!-- /social -->
 
 					<!-- logo -->
 					<div class="nav-logo">
-						<a href="<?php echo site_url()?>" class="logo"><img src="<?php echo get_theme_file_uri('/assets/img/logo.png')?>" alt=""></a>
+						<a href="<?php echo site_url()?>" class="logo"><img src="<?php print $headerLogo; ?>" alt=""></a>
 					</div>
 					<!-- /logo -->
 
@@ -66,25 +74,105 @@
 
 			<!-- Aside Nav -->
 			<div id="nav-aside">
-				<ul class="nav-aside-menu">
-					<li><a href="index.html">Home</a></li>
-					<li class="has-dropdown"><a>Categories</a>
-						<ul class="dropdown">
-							<li><a href="#">Lifestyle</a></li>
-							<li><a href="#">Fashion</a></li>
-							<li><a href="#">Technology</a></li>
-							<li><a href="#">Travel</a></li>
-							<li><a href="#">Health</a></li>
-						</ul>
-					</li>
-					<li><a href="about.html">About Us</a></li>
-					<li><a href="contact.html">Contacts</a></li>
-					<li><a href="#">Advertise</a></li>
-				</ul>
+				<?php //Home_Drop_Menu
+					wp_nav_menu( array(
+								'theme_location' => 'Slider_Menu',
+								'menu_class' => 'nav-aside-menu'
+						) );
+					 ?>
 				<button class="nav-close nav-aside-close"><span></span></button>
 			</div>
 			<!-- /Aside Nav -->
 		</div>
 		<!-- /NAV -->
+		<?php
+		if(is_single()){
+		?>
+
+			<div id="post-header" class="page-header">
+				<div class="page-header-bg" style="background-image: url('<?php the_post_thumbnail_url(); ?>');" data-stellar-background-ratio="0.5"></div>
+				<div class="container">
+						<div class="row">
+							<div class="col-md-10">
+								<div class="post-category">
+									<?php the_category(' '); ?>
+								</div>
+								<h1>
+								<?php the_title(); ?>
+								</h1>
+								<ul class="post-meta">
+									<li><?php the_author_posts_link(); ?></li>
+									<li><?php the_date(); ?></li>
+									<li><i class="fa fa-comments"></i> <?php comments_number( '0', '1', '%'); ?></li>
+									<li><i class="fa fa-eye"></i> <?php echo getPostViews(get_the_ID()); ?></li>
+								</ul>
+							</div>
+						</div>
+				</div>
+			</div>
+		<?php
+		}
+		if(!is_home() && !is_single() && !is_front_page() && !is_category() && !is_archive() && !is_404() && !is_category()){
+		?>
+		<!-- PAGE HEADER -->
+		<div class="page-header">
+			<div class="page-header-bg" style="background-image: url('<?php the_post_thumbnail_url(); ?>');" data-stellar-background-ratio="0.5"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-offset-1 col-md-10 text-center">
+						<h1 class="text-uppercase"><?php the_title(); ?></h1>
+						<p class="lead"><?php the_content(); ?></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /PAGE HEADER -->
+		<?php
+		}
+
+		if (is_category()) {
+		
+		?>
+
+		<!-- PAGE HEADER -->
+		<div class="page-header">
+			<div class="page-header-bg" style="background-image: url('<?php echo get_theme_file_uri('/img/header-2.jpg')?>');" data-stellar-background-ratio="0.5"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-offset-1 col-md-10 text-center">
+						<h1 class="text-uppercase"><?php single_cat_title(); ?></h1>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /PAGE HEADER -->
+		<?php
+		}
+		if(is_author()){
+		?>
+	<!-- PAGE HEADER -->
+		<div class="page-header">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-offset-1 col-md-10 text-center">
+						<div class="author">
+							<img class="author-img center-block" src="<?php echo get_avatar_url(get_the_author_meta('ID')); ?>" alt="">
+							<h1 class="text-uppercase"><?php the_author_meta('display_name'); ?></h1>
+							<p class="lead"><?php the_author_meta('description'); ?></p>
+							<ul class="author-social">
+								<li><a href="<?php the_author_meta( 'facebook', get_current_user_id() ); ?>"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="<?php the_author_meta( 'twitter', get_current_user_id() ); ?>"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="<?php the_author_meta( 'googleplus', get_current_user_id() ); ?>"><i class="fa fa-google-plus"></i></a></li>
+								<li><a href="<?php the_author_meta( 'instagram', get_current_user_id() ); ?>"><i class="fa fa-instagram"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	<!-- /PAGE HEADER -->
+	<?php
+	}
+	 ?>
 	</header>
 	<!-- /HEADER -->
