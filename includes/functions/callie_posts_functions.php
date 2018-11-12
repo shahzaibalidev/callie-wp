@@ -103,7 +103,7 @@ function toploophtml($style, $selectedtitle = ''){
 			break;
 		
 		default:
-			# code...
+			
 			break;
 	}
 }
@@ -193,7 +193,7 @@ function inloophtml($style, $post_url, $thumb_url, $thumb_alt, $post_cat_list, $
 			break;
 		
 		default:
-			# code...
+			
 			break;
 	}
 }
@@ -222,7 +222,7 @@ function bottomloophtml($style){
 			break;
 		
 		default:
-			# code...
+			
 			break;
 	}
 }

@@ -68,6 +68,7 @@
 					</div>
 					<!-- /post nav  -->
 
+				<?php if($GLOBALS[ 'userinfobox' ] == 1){ ?>
 					<!-- post author -->
 					<div class="section-row">
 						<div class="section-title">
@@ -91,6 +92,7 @@
 						</div>
 					</div>
 					<!-- /post author -->
+				<?php } ?>
 
 					<!-- /related post -->
 					<div>

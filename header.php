@@ -4,6 +4,7 @@ $GLOBALS[ 'facebook' ] = esc_attr( get_option( 'facebook_handler', 'admin_panel'
 $GLOBALS[ 'twitter' ] = esc_attr( get_option( 'twitter_handler' ) );
 $GLOBALS[ 'googleplus'] = esc_attr( get_option( 'googleplus_handler' ) );
 $GLOBALS[ 'instagram'] = esc_attr( get_option( 'instagram_handler' ) );
+$GLOBALS[ 'userinfobox' ] = $option = esc_attr( get_option( 'user_info_box' ) );
 ?>
 <!DOCTYPE html>
 <html lang="en">

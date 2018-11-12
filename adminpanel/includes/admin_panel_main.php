@@ -75,6 +75,10 @@
 		);
 		register_setting(
 			'admin-panel-general-group', //Option Group.
+			'user_info_box' //Option Name.
+		);
+		register_setting(
+			'admin-panel-general-group', //Option Group.
 			'facebook_handler', //Option Name.
 			'sanitize_facebook_handler' //sanitize Callback.
 		);
@@ -120,6 +124,14 @@
 			'footer-description', //ID.
 			'Footer Description', //Title.
 			'footer_description', //Callback function.
+			'admin_panel', //page.
+			'admin-panel-general-options' //section.
+			//args or Array.
+		);
+		add_settings_field(
+			'user-info-box', //ID.
+			'Show User Info Box', //Title.
+			'user_info_box', //Callback function.
 			'admin_panel', //page.
 			'admin-panel-general-options' //section.
 			//args or Array.
@@ -189,6 +201,12 @@
 	function footer_description(){
 		$footerDescription = esc_attr( get_option( 'footer_description' ) );
 		echo '<textarea name="footer_description" cols="53" rows="5" placeholder="Footer Description">'.$footerDescription.'</textarea>';
+	}
+
+	function user_info_box(){
+		$option = esc_attr( get_option( 'user_info_box' ) );
+		$checked = ($option == 1 ? 'checked' : '');
+		echo '<input type="checkbox" class="regular-text code" name="user_info_box" value="1" '.$checked.'/><p class="description">Disply User Info Box in Posts.</p>';
 	}
 
 	function facebook_handler(){
