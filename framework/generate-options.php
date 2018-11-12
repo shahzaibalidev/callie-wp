@@ -38,7 +38,8 @@ jQuery(document).ready(function() {
 
 <div id="acera-sidebar">
 <div id="acera-meta-info">
-<h1><?php echo DT_THEME_NAME; ?> <em><?php echo DT_VERSION; ?></em></h1>
+<h1><?php echo THEME_NAME; ?> <em><?php echo THEME_VERSION; ?></em></h1>
+<h2><?php echo THEME_AUTHOR; ?></h2>
 </div>
 <ul id="acera-main-menu">
 <?php $first = true; ?> 

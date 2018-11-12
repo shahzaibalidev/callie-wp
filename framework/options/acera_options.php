@@ -4,83 +4,84 @@ $options = array(
 
 /*============================================================================*/
 
-array("type" => "section","icon" => "dashicons-admin-settings","title" => __( "Configuration", "psythemes" ),"id" => "general","expanded" => "true"),
+array("type" => "section","icon" => "dashicons-admin-settings","title" => "Configuration"
+    ,"id" => "general","expanded" => "true"),
 
-array("type" => "section","icon" => "dashicons-email-alt","title" => __( "Mail Settings", "psythemes" ),"id" => "mails","expanded" => "false"),
+array("type" => "section","icon" => "dashicons-email-alt","title" => "Mail Settings","id" => "mails","expanded" => "false"),
 
-array("type" => "section","icon" => "dashicons-admin-home","title" => __( "Home page", "psythemes" ),"id" => "homepage","expanded" => "false"),
+array("type" => "section","icon" => "dashicons-admin-home","title" => "Home page","id" => "homepage","expanded" => "false"),
 
-array("type" => "section","icon" => "dashicons-analytics","title" => __( "Advertising", "psythemes" ),"id" => "adsconfig","expanded" => "false"),
+// array("type" => "section","icon" => "dashicons-analytics","title" => "Advertising","id" => "adsconfig","expanded" => "false"),
 
-array("type" => "section","icon" => "dashicons-chart-area","title" => __( "SEO", "psythemes" ),"id" => "seo-config","expanded" => "false"),
+array("type" => "section","icon" => "dashicons-chart-area","title" => "SEO","id" => "seo-config","expanded" => "false"),
 
-array("type" => "section","icon" => "dashicons-admin-tools","title" => __( "Tools", "psythemes" ),"id" => "general2","expanded" => "false"),
+array("type" => "section","icon" => "dashicons-admin-tools","title" => "Tools","id" => "general2","expanded" => "false"),
 
-array("section" => "general", "type" => "heading","title" => __( "General Settings", "psythemes" ),"id" => "general-config"),	
+array("section" => "general", "type" => "heading","title" => "General Settings","id" => "general-config"),	
 
-array("section" => "general", "type" => "heading","title" => __( "Advance Settings", "psythemes" ),"id" => "adv-config"),
+array("section" => "general", "type" => "heading","title" => "Advance Settings","id" => "adv-config"),
 
-array("section" => "general", "type" => "heading","title" => __( "TMDb API", "psythemes" ),"id" => "api-config"),
+// array("section" => "general", "type" => "heading","title" => "TMDb API","id" => "api-config"),
 
-array("section" => "general", "type" => "heading","title" => __( "Customize", "psythemes" ),"id" => "style-config"),	
+array("section" => "general", "type" => "heading","title" => "Customize","id" => "style-config"),	
 
-array("section" => "general", "type" => "heading","title" => __( "Pages", "psythemes" ),"id" => "pages-config"),	
+// array("section" => "general", "type" => "heading","title" => "Pages","id" => "pages-config"),	
 
-array("section" => "mails", "type" => "heading","title" => __( "Report Settings", "psythemes" ),"id" => "rprt-config"),
+array("section" => "mails", "type" => "heading","title" => "Report Settings","id" => "rprt-config"),
 
-array("section" => "mails", "type" => "heading","title" => __( "Requests Settings", "psythemes" ),"id" => "rqst-config"),
+array("section" => "mails", "type" => "heading","title" => "Requests Settings","id" => "rqst-config"),
 
-array("section" => "mails", "type" => "heading","title" => __( "SMTP Settings", "psythemes" ),"id" => "smtp-config"),
+array("section" => "mails", "type" => "heading","title" => "SMTP Settings","id" => "smtp-config"),
 
-// array("section" => "general", "type" => "heading","title" => __( "Anti Adblocker", "psythemes" ),"id" => "adblock-config"),
+array("section" => "general", "type" => "heading","title" => "Anti Adblocker","id" => "adblock-config"),
 
-array("section" => "general", "type" => "heading","title" => __( "Site Notice", "psythemes" ),"id" => "notice-config"),
+// array("section" => "general", "type" => "heading","title" => "Site Notice","id" => "notice-config"),
 
- array("section" => "general", "type" => "heading","title" => __( "Watch Page Settings", "psythemes" ),"id" => "watch-config"), 
+// array("section" => "general", "type" => "heading","title" => "Watch Page Settings","id" => "watch-config"), 
 
-array("section" => "general", "type" => "heading","title" => __( "TV-Series Settings", "psythemes" ),"id" => "tv-config"),
+// array("section" => "general", "type" => "heading","title" => "TV-Series Settings","id" => "tv-config"),
 
-array("section" => "general", "type" => "heading","title" => __( "Articles Settings", "psythemes" ),"id" => "article-config"),
+// array("section" => "general", "type" => "heading","title" => "Articles Settings","id" => "article-config"),
 
-array("section" => "general", "type" => "heading","title" => __( "Comments", "psythemes" ),"id" => "comentarios-config"),
+// array("section" => "general", "type" => "heading","title" => "Comments","id" => "comentarios-config"),
 
-array("section" => "general", "type" => "heading","title" => __( "Footer Settings", "psythemes" ),"id" => "footer-config"),
+array("section" => "general", "type" => "heading","title" => "Footer Settings","id" => "footer-config"),
 
-array("section" => "adsconfig", "type" => "heading","title" => __( "Ads - Fake Player", "psythemes" ),"id" => "ads-player-config"),
+// array("section" => "adsconfig", "type" => "heading","title" => "Ads - Fake Player","id" => "ads-player-config"),
 
-array("section" => "adsconfig", "type" => "heading","title" => __( "Ads - Fake Buttons", "psythemes" ),"id" => "ads-buttons-config"),
+// array("section" => "adsconfig", "type" => "heading","title" => "Ads - Fake Buttons","id" => "ads-buttons-config"),
 
-array("section" => "adsconfig", "type" => "heading","title" => __( "Ad blocks - Home Page", "psythemes" ),"id" => "ads-homepage-config"),
+// array("section" => "adsconfig", "type" => "heading","title" => "Ad blocks - Home Page","id" => "ads-homepage-config"),
 
-array("section" => "adsconfig", "type" => "heading","title" => __( "Ad blocks - Archive Pages" ),"id" => "ads-mains-config"),
+// array("section" => "adsconfig", "type" => "heading","title" => "Ad blocks - Archive Pages","id" => "ads-mains-config"),
 
-array("section" => "adsconfig", "type" => "heading","title" => __( "Ad blocks - Watch Pages", "psythemes" ),"id" => "ads-vid-config"),
+// array("section" => "adsconfig", "type" => "heading","title" => "Ad blocks - Watch Pages","id" => "ads-vid-config"),
 
-array("section" => "adsconfig", "type" => "heading","title" => __( "Ad blocks - Single Pages", "psythemes" ),"id" => "ads-page-config"),
+// array("section" => "adsconfig", "type" => "heading","title" => "Ad blocks - Single Pages","id" => "ads-page-config"),
 
-array("section" => "homepage", "type" => "heading","title" => __( "Home Modules", "psythemes" ),"id" => "home-module"),
+array("section" => "homepage", "type" => "heading","title" => "Home Modules","id" => "home-module"),
 
-array("section" => "homepage", "type" => "heading","title" => __( "Main Slider", "psythemes" ),"id" => "sli-module"),
+array("section" => "homepage", "type" => "heading","title" => "Main Slider","id" => "sli-module"),
 
-array("section" => "homepage", "type" => "heading","title" => __( "Suggestion Module", "psythemes" ),"id" => "sugg-module"),
+array("section" => "homepage", "type" => "heading","title" => "Suggestion Module","id" => "sugg-module"),
 
-array("section" => "homepage", "type" => "heading","title" => __( "Latest Movies Modules", "psythemes" ),"id" => "latest-mov"),
+array("section" => "homepage", "type" => "heading","title" => "Latest Movies Modules","id" => "latest-mov"),
 
-array("section" => "homepage", "type" => "heading","title" => __( "Latest TV Series Modules", "psythemes" ),"id" => "latest-tv"),
+array("section" => "homepage", "type" => "heading","title" => "Latest TV Series Modules","id" => "latest-tv"),
 
-array("section" => "homepage", "type" => "heading","title" => __( "Latest Episodes Modules", "psythemes" ),"id" => "latest-ep"),
+array("section" => "homepage", "type" => "heading","title" => "Latest Episodes Modules","id" => "latest-ep"),
 
-array("section" => "homepage", "type" => "heading","title" => __( "Additional Modules", "psythemes" ),"id" => "additional-modules"),
+array("section" => "homepage", "type" => "heading","title" => "Additional Modules","id" => "additional-modules"),
 
-array("section" => "general2", "type" => "heading","title" => __( "Minify HTML", "psythemes" ),"id" => "minify-config"),
+array("section" => "general2", "type" => "heading","title" => "Minify HTML","id" => "minify-config"),
 
-/* array("section" => "general2", "type" => "heading","title" => __( "External Link Page", "psythemes" ),"id" => "link-config"), */
+/* array("section" => "general2", "type" => "heading","title" => "External Link Page","id" => "link-config"), */
 
-array("section" => "general2", "type" => "heading","title" => __( "Code Integrations", "psythemes" ),"id" => "dev-config"),
+array("section" => "general2", "type" => "heading","title" => "Code Integrations","id" => "dev-config"),
 
-array("section" => "seo-config", "type" => "heading","title" => __( "Basic Settings", "psythemes" ),"id" => "seo-config"),
+array("section" => "seo-config", "type" => "heading","title" => "Basic Settings","id" => "seo-config"),
 
-array("section" => "seo-config", "type" => "heading","title" => __( "Site Verification", "psythemes" ),"id" => "verify-config"),
+array("section" => "seo-config", "type" => "heading","title" => "Site Verification","id" => "verify-config"),
 
 
 
@@ -364,11 +365,11 @@ array(
 array(
     "under_section" => "general-config", //Required
     "type" => "checkbox", //Required
-    "name" => __( "Basic Tools", "psythemes" ), //Required
-	"id" => array("bcontrols_admin_bar", "bcontrols_emojicons"), //Required
+    "name" => "Basic Tools", //Required
+	"id" => array("bcontrols_admin_bar"), //Required
     "display_checkbox_id" => "toggle_checkbox_id",
-    "options" => array ("Admin Bar", "Emojicons"), //Required
-    "default" => array("not", "not")
+    "options" => array ("Admin Bar"), //Required
+    "default" => array("not")
 	
 ),
 
@@ -378,7 +379,7 @@ array(
     "name" => "Night Mode Switch", //Required
     "id" => "night-mode", //Required
     "display_checkbox_id" => "toggle_checkbox_id",
-    "options" => array("true" => __('Enable','psythemes'), "false" => __('Disable','psythemes')), //Required
+    "options" => array("true" => "Enable", "false" => "Disable"), //Required
     "desc" => "Let user switch from light to dark scheme.",
     "default" => "true"
 ),
@@ -389,31 +390,31 @@ array(
 
     "type" => "text", //Required
 
-    "name" => __( "Google Analytics", "psythemes" ), //Required
+    "name" => "Google Analytics", //Required
 
     "id" => "analitica", //Required
 
     "display_checkbox_id" => "toggle_checkbox_id",
 
-    "desc" => __( "Insert tracking code to use this function.", "psythemes" ),
+    "desc" => "Insert tracking code to use this function.",
 
-    "placeholder" => __( "UA-30189257-31", "psythemes" ),
+    "placeholder" => "UA-00000000-00",
 
 ),
 
 
 
-/*
+
 array(
     "under_section" => "general-config", //Required
     "type" => "radio", //Required
-    "name" => __( "User Registration", "psythemes" ), //Required
+    "name" => "User Registration", //Required
     "id" => "user-reg-check", //Required
     "display_checkbox_id" => "toggle_checkbox_id",
-    "options" => array("enable" => __('Enable','psythemes'), "disable" => __('Disable','psythemes')), //Required
-    "default" => "enable",
+    "options" => array("enable" => "Enable", "disable" => "Disable"), //Required
+    "default" => "disable",
 ), 
-*/
+
 
 
 
@@ -421,7 +422,7 @@ array(
 array (
 	"under_section" => "general-config",
 	"type" => "small_heading",
-	"title" => __( "reCaptcha Settings", "psythemes" ),
+	"title" => "reCaptcha Settings",
 ),
 
 
@@ -431,7 +432,7 @@ array(
 
     "type" => "text", //Required
 
-    "name" => __( "Public Key", "psythemes" ), //Required
+    "name" => "Public Key", //Required
 
     "display_checkbox_id" => "toggle_checkbox_id",
 
@@ -439,10 +440,7 @@ array(
 
     "placeholder" => "9Be3-7FGUUUUUUKC5Vx_IFxfkUaDHLZifBI0-kij",
 
-    "desc" => 
-	
-	__("Get your key here - <a href=\"https://www.google.com/recaptcha/admin\" target=\"_blank\">Google reCAPTCHA</a>.",
-"psythemes"),
+    "desc" => "Get your key here - <a href=\"https://www.google.com/recaptcha/admin\" target=\"_blank\">Google reCAPTCHA</a>.",
     "default" => ""
 
 ),
@@ -453,7 +451,7 @@ array(
 
     "type" => "text", //Required
 
-    "name" => __( "Private Key", "psythemes" ), //Required
+    "name" => "Private Key", //Required
 
     "display_checkbox_id" => "toggle_checkbox_id",
 
@@ -461,7 +459,7 @@ array(
 
     "placeholder" => "9Be3-7FGUUUUUFSKhhqv3kozQDlqJo90sfOnvQNs",
 
-    "desc" => __("Get your key here - <a href=\"https://www.google.com/recaptcha/admin\" target=\"_blank\">Google reCAPTCHA</a>.", "psythemes"),
+    "desc" => "Get your key here - <a href=\"https://www.google.com/recaptcha/admin\" target=\"_blank\">Google reCAPTCHA</a>.",
 
 
 ),
@@ -472,7 +470,7 @@ array(
 	array(
     "under_section" => "general-config", 
     "type" => "small_heading", 
-    "title" => __( "Favorites Settings", "psythemes" ),
+    "title" => "Favorites Settings",
 ),
 
 array(
@@ -500,7 +498,7 @@ array(
     "name" => "Allowed to rate", //Required
     "id" => "fav-allow-settings", //Required
     "display_checkbox_id" => "toggle_checkbox_id",
-    "options" => array("1" => __('Logged-in Users Only','psythemes'), "2" => __('Guests & Logged-in Users','psythemes')), //Required
+    "options" => array("1" => "Logged-in Users Only", "2" => "Guests & Logged-in Users"), //Required
     "default" => "1"
 ),
 
@@ -532,7 +530,7 @@ array(
 	"display_checkbox_id" => "toggle_checkbox_id",
     "id" => "sli-social-id", //Required
     "placeholder" => "58afa5de7221535f",
-	"desc" => __("Example: ra-<span style='font-weight:bold;color:red;'>58afa5de7221535f</span> | <a href='https://psythemes.ml/docs/psyplay-documentation/#social-buttons' target='_blank'>Click here</a> to watch on how to setup an addthis.com codes and get your id.","psythemes"),
+	"desc" => __("Example: ra-<span style='font-weight:bold;color:red;'>58afa5de7221535f</span> | <a href='#' target='_blank'>Click here</a> to watch on how to setup an addthis.com codes and get your id.","psythemes"),
 ),
 
 array(
@@ -640,7 +638,8 @@ array(
 ),
 
 // TMDb Settings
-array(
+
+/*array(
     "under_section" => "api-config",
     "type" => "checkbox",
     "name" => __("TMDb API","psythemes"),
@@ -672,7 +671,7 @@ array(
     "id" => array("apigenero"),
     "options" => array( __("Activate","psythemes"), ), 
     "desc" => __("This function automatically generates categories", "psythemes"),
-    "default" => array("checked")),
+    "default" => array("checked")),*/
 	
 	// ANTI Adblocker
 	
@@ -849,7 +848,7 @@ array(
 	"default" => array("not", "not")
 ),	
 	
-array(
+/*array(
 
     "under_section" => "style-config",
     "type" => "small_heading",
@@ -893,7 +892,7 @@ array(
 	"img_desc" => get_bloginfo('template_directory')."/assets/css/img/img_desc/gm.png",
     "default" => array("not")
 
-),
+),*/
 
 array(
 
